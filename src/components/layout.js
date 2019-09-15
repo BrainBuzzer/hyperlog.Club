@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
+import { css } from '@emotion/core'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -17,18 +18,29 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
+        css={css`
+          margin: 0 auto;
+          padding: 0px 1.0875rem 1.45rem;
+          padding-top: 0;
+        `}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Hyperlog
-        </footer>
       </div>
+      <footer css={css`
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 7vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1rem;
+        background-color: #3366ff;
+        color: #fff;
+      `}>
+        © {new Date().getFullYear()}, Hyperlog
+      </footer>
     </>
   )
 }
