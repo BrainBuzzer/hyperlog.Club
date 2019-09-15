@@ -3,6 +3,7 @@ import Sidebar from './sidebar'
 import { Row, Col, Divider } from 'antd'
 import SEO from '../seo'
 import Header from '../header'
+import css from '@emotion/css'
 
 const Layout = ({ children, link, title, location }) => {
   return (
@@ -10,17 +11,25 @@ const Layout = ({ children, link, title, location }) => {
       <SEO title={title} />
       <Header />
       <Row>
-        <Col span={6}>
+        <Col sm={24} md={6}>
           <Sidebar link={link} />
         </Col>
-        <Col span={18}>
-          <section class="content">
-            <article class="markdown-section" id="main">
-              <h1>{title}</h1>
-              <Divider />
-              <div dangerouslySetInnerHTML={{ __html: children}} />
-            </article>
-          </section>
+        <Col sm={24} md={18}>
+          <main>
+            <section css={css`
+              position: relative;
+              min-height: 500px;
+              padding: 0 170px 144px 64px;
+              overflow: hidden;
+              background: #fff;
+            `}>
+              <article class="markdown-section" id="main">
+                <h1>{title}</h1>
+                <Divider />
+                <div dangerouslySetInnerHTML={{ __html: children}} />
+              </article>
+            </section>
+          </main>
         </Col>
       </Row>
     </>

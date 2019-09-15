@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import React from "react"
 import { Row, Col, Affix, Menu, Button } from "antd"
 import { Location } from "@reach/router"
@@ -8,7 +8,7 @@ const Header = () => (
     <header class="header">
       <Row>
         <Col span={6}>
-          <div className="header-logo">h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
+          <div className="header-logo" onClick={() => { navigate("/") }}>h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
         </Col>
         <Col span={18}>
           <div style={{float: "right", marginRight: `1rem`}}>
