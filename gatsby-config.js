@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `hyperlog.Club`,
@@ -6,6 +8,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-antd`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `assets`, `images`),
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -19,7 +31,6 @@ module.exports = {
         path: `${__dirname}/resources/beginners`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -52,15 +63,13 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`,
     {
-      // TODO: Fix the colors
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Learn to code with the community | hyperlog.Club`,
         short_name: `hyperlog.Club`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#3366ff`,
         theme_color: `#3366ff`,
         display: `minimal-ui`,
       },
