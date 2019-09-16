@@ -59,7 +59,7 @@ query {
   }
   htmlcss: file(relativePath:{eq: "htmlcss.jpg"}){
     childImageSharp{
-      fluid(duotone: { highlight: "#BB4090", shadow: "#192550"s }, maxWidth: 500, maxHeight: 500) {
+      fluid(duotone: { highlight: "#BB4090", shadow: "#192550" }, maxWidth: 500, maxHeight: 500) {
         ...GatsbyImageSharpFluid
       }
     }
