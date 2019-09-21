@@ -25,20 +25,20 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Resources to learn programming" />
     <h1>Resources for starting out</h1>
-    <div class="cards-list">
-      <div class="card" onClick={() => { navigate("/resources/set-up-dev/") }}>
-        <div class="card_image"><BgImg fluid={data.beginners.childImageSharp.fluid} /></div>
-        <div class="card_title title-white">
+    <div className="cards-list">
+      <div className="card" onClick={() => { navigate("/resources/set-up-dev/") }}>
+        <div className="card_image"><BgImg fluid={data.beginners.childImageSharp.fluid} /></div>
+        <div className="card_title title-white">
           <p>Programming for complete beginners</p>
         </div>
       </div>
     </div>
     <Divider />
     <h1>Learn Programming Languages</h1>
-    <div class="cards-list">
-      <div class="card" onClick={() => { navigate("/resources/set-up-dev/") }}>
-        <div class="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
-        <div class="card_title title-white">
+    <div className="cards-list">
+      <div className="card" onClick={() => { navigate("/resources/set-up-dev/") }}>
+        <div className="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
+        <div className="card_title title-white">
           <p>HTML & CSS</p>
         </div>
       </div>

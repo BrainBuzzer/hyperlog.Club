@@ -23,7 +23,7 @@ const Layout = ({ children, link, title, location }) => {
               overflow: hidden;
               background: #fff;
             `}>
-              <article class="markdown-section" id="main">
+              <article className="markdown-section" id="main">
                 <h1>{title}</h1>
                 <Divider />
                 <div dangerouslySetInnerHTML={{ __html: children}} />

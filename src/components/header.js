@@ -5,7 +5,7 @@ import { Location } from "@reach/router"
 
 const Header = () => (
   <Affix offsetTop={0}>
-    <header class="header">
+    <header className="header">
       <Row>
         <Col span={6}>
           <div className="header-logo" onClick={() => { navigate("/") }}>h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
