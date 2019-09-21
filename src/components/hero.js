@@ -56,7 +56,7 @@ const Button = styled(Link)`
   padding: 0.4em;
   position: relative;
   transition: ease;
-  background: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.75);
 
   &.join-button {
     border: 3px solid #fff;
@@ -66,6 +66,10 @@ const Button = styled(Link)`
   &.resource-button {
     border: 1px solid #fff;
     font-weight: 400;
+
+    &:hover {
+      font-weight: 600;
+    }
   }
 
   &::after {
@@ -83,8 +87,9 @@ const Button = styled(Link)`
   }
 
   &:hover {
-    color: #2ecc71;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    color: #3568ff;
+    box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.5);
+    background-color: #fff; 
     transition: ease;
 
     &:after {
@@ -105,8 +110,6 @@ const Hero = () => {
     }
   }
   `)
-
-  // TODO!important: Fix the styling of buttons
 
   return (
     <ImageBackground Tag="section" fluid={bgimage.childImageSharp.fluid}>
