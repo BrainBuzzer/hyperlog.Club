@@ -1,6 +1,7 @@
 import React from 'react'
 import BeginnerResources from '../../../resources/sidebar/beginners.yaml';
 import HTMLCSSResources from '../../../resources/sidebar/htmlcss.yaml';
+import PythonResources from '../../../resources/sidebar/python.yaml';
 import { Menu, Affix } from 'antd';
 import { Link } from 'gatsby';
 import { css } from "@emotion/core"
@@ -21,6 +22,8 @@ class Sidebar extends React.Component {
       this.setState({ Resources: BeginnerResources })
     } else if(resource === 'htmlcss') {
       this.setState({ Resources: HTMLCSSResources })
+    } else if(resource === 'python') {
+      this.setState({ Resources: PythonResources })
     }
   }
 

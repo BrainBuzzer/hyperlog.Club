@@ -42,6 +42,13 @@ const IndexPage = ({ data }) => (
           <p>HTML & CSS</p>
         </div>
       </div>
+
+      <div className="card" onClick={() => { navigate("/resources/python/set-up-dev/") }}>
+        <div className="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
+        <div className="card_title title-white">
+          <p>Python</p>
+        </div>
+      </div>
     </div>
   </Layout>
 )
