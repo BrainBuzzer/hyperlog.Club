@@ -6,7 +6,7 @@ const PostResource = ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <Layout link={`/resources/${post.frontmatter.slug}/`} title={post.frontmatter.title}>
+      <Layout link={`/resources/${post.frontmatter.slug}/`} resource={post.frontmatter.resource} title={post.frontmatter.title}>
         {post.html}
       </Layout>
     </>
@@ -22,6 +22,7 @@ query($slug:String!){
       title
       author
       slug
+      resource
     }
     html
   }

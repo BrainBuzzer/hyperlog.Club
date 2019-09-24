@@ -5,14 +5,14 @@ import SEO from '../seo'
 import Header from '../header'
 import css from '@emotion/css'
 
-const Layout = ({ children, link, title, location }) => {
+const Layout = ({ children, link, title, resource }) => {
   return (
     <>
       <SEO title={title} />
       <Header />
       <Row>
         <Col sm={24} md={6}>
-          <Sidebar link={link} />
+          <Sidebar link={link} resource={resource} />
         </Col>
         <Col sm={24} md={18}>
           <main>

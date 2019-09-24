@@ -2,6 +2,7 @@
 title: Where to start
 slug: where-to-start
 author: Aditya Giri
+resource: beginners
 ---
 
 # Where to Start guide

@@ -1,8 +1,8 @@
 ---
 title: Setting up Development Environment
-slug: set-up-dev
+slug: htmlcss/set-up-dev
 author: Aditya Giri
-resource: beginners
+resource: htmlcss
 ---
 
 # dev env
@@ -18,5 +18,5 @@ lorem ipsum text 2
 # second important part
 
 ```js
-export const a = "123"
+export const a = "1"
 ```
