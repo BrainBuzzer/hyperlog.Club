@@ -1,5 +1,4 @@
 import React from 'react'
-import BeginnerResources from '../../../resources/sidebar/beginners.yaml';
 import HTMLCSSResources from '../../../resources/sidebar/htmlcss.yaml';
 import PythonResources from '../../../resources/sidebar/python.yaml';
 import JavascriptResources from '../../../resources/sidebar/javascript.yaml';
@@ -19,9 +18,7 @@ class Sidebar extends React.Component {
     /**
      * Check the Resource allocation
      */
-    if(resource === 'beginners') {
-      this.setState({ Resources: BeginnerResources })
-    } else if(resource === 'htmlcss') {
+    if(resource === 'htmlcss') {
       this.setState({ Resources: HTMLCSSResources })
     } else if(resource === 'python') {
       this.setState({ Resources: PythonResources })

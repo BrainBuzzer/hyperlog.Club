@@ -27,13 +27,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `beginners_resources`,
-        path: `${__dirname}/resources/beginners`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `htmlcss_resources`,
         path: `${__dirname}/resources/htmlcss`,
       },

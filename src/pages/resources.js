@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { navigate } from "gatsby"
-import { Divider } from "antd"
 
 const BgImg = styled(Img)`
   position: absolute;
@@ -24,16 +23,6 @@ const BgImg = styled(Img)`
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Resources to learn programming" />
-    <h1>Resources for starting out</h1>
-    <div className="cards-list">
-      <div className="card" onClick={() => { navigate("/resources/set-up-dev/") }}>
-        <div className="card_image"><BgImg fluid={data.beginners.childImageSharp.fluid} /></div>
-        <div className="card_title title-white">
-          <p>Programming for complete beginners</p>
-        </div>
-      </div>
-    </div>
-    <Divider />
     <h1>Learn Programming Languages</h1>
     <div className="cards-list">
       <div className="card" onClick={() => { navigate("/resources/htmlcss/set-up-dev/") }}>
