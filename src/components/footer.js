@@ -3,11 +3,9 @@ import { css } from "@emotion/core"
 
 const Footer = () => (
   <footer css={css`
-    bottom: 0;
-    position: absolute;
     display: flex;
     width: 100%;
-    height: 7vh;
+    height: 70px;
     justify-content: center;
     align-items: center;
     font-weight: 400;
