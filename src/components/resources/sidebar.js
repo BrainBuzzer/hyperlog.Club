@@ -2,6 +2,7 @@ import React from 'react'
 import BeginnerResources from '../../../resources/sidebar/beginners.yaml';
 import HTMLCSSResources from '../../../resources/sidebar/htmlcss.yaml';
 import PythonResources from '../../../resources/sidebar/python.yaml';
+import JavascriptResources from '../../../resources/sidebar/javascript.yaml';
 import { Menu, Affix } from 'antd';
 import { Link } from 'gatsby';
 import { css } from "@emotion/core"
@@ -24,6 +25,8 @@ class Sidebar extends React.Component {
       this.setState({ Resources: HTMLCSSResources })
     } else if(resource === 'python') {
       this.setState({ Resources: PythonResources })
+    } else if(resource === 'javascript') {
+      this.setState({ Resources: JavascriptResources })
     }
   }
 
