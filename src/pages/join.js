@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Result, Button } from 'antd';
-import { login, getProfile } from "../utils/auth"
+import { login, getProfile, logout } from "../utils/auth"
 
 class JoinPage extends React.Component {
   login = () => {
@@ -36,8 +36,8 @@ class JoinPage extends React.Component {
               title={`Congrats on joining the community, ${this.state.user.name}!`}
               subTitle="Details of joining our discord server will be mailed to you within 24 hours."
               extra={[
-                <Button type="primary" key="console">
-                  Join Discord
+                <Button type="primary" key="console" onClick={e => { logout(); login() }}>
+                  Add another user
                 </Button>
               ]}
             />
