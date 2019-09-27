@@ -26,7 +26,7 @@ class JoinPage extends React.Component {
         <SEO title="Join hyperlog.Club" />
         {
           !this.state.loggedIn && (
-            <Button onClick={this.login.bind(this)}>
+            <Button type="primary" shape="round" size="large" onClick={this.login.bind(this)}>
               Log In
             </Button>
           )
