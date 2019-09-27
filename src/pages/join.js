@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Button } from "antd"
+import { Result, Button } from 'antd';
 import { login, getProfile } from "../utils/auth"
 
 class JoinPage extends React.Component {
@@ -31,10 +31,16 @@ class JoinPage extends React.Component {
         }
         {
           this.state.loggedIn && (
-            <div>
-              <h1>Congrats on joining the community, {this.state.user.name}!</h1>
-              <p> Details of joining our discord server will be mailed to you within 24 hours.</p>
-            </div>
+            <Result
+              status="success"
+              title={`Congrats on joining the community, ${this.state.user.name}!`}
+              subTitle="Details of joining our discord server will be mailed to you within 24 hours."
+              extra={[
+                <Button type="primary" key="console">
+                  Join Discord
+                </Button>
+              ]}
+            />
           )
         }
       </Layout>
