@@ -26,7 +26,7 @@ export const isAuthenticated = () => {
     return;
   }
 
-  return localStorage.getItem("isLoggedIn") === true
+  return localStorage.getItem("isLoggedIn") === String(true)
 }
 
 export const login = () => {

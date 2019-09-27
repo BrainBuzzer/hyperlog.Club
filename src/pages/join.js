@@ -3,9 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Result, Button } from 'antd';
-import { login, getProfile, logout } from "../utils/auth"
-
-const windowGlobal = typeof window !== 'undefined' && window
+import { login, getProfile, logout, isAuthenticated } from "../utils/auth"
 
 class JoinPage extends React.Component {
   login = () => {
@@ -15,7 +13,7 @@ class JoinPage extends React.Component {
   constructor() {
     super()
     this.state = {
-      loggedIn: windowGlobal.localStorage.getItem("isLoggedIn"),
+      loggedIn: isAuthenticated(),
       user: getProfile()
     }
   }
