@@ -2,12 +2,44 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Button } from "antd"
+import { login, getProfile } from "../utils/auth"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Join hyperlog.Club" />
-    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe title="Airtable Join Form" className="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shriOya7CEfYhBRqU?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="704" style={{background: `transparent`}}></iframe>
-  </Layout>
-)
+class JoinPage extends React.Component {
+  login = () => {
+    login()
+  }
 
-export default IndexPage
+  constructor() {
+    super()
+    this.state = {
+      loggedIn: localStorage.getItem("isLoggedIn"),
+      user: getProfile()
+    }
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Join hyperlog.Club" />
+        {
+          !this.state.loggedIn && (
+            <Button onClick={this.login.bind(this)}>
+              Log In
+            </Button>
+          )
+        }
+        {
+          this.state.loggedIn && (
+            <div>
+              <h1>Congrats on joining the community, {this.state.user.name}!</h1>
+              <p> Details of joining our discord server will be mailed to you within 24 hours.</p>
+            </div>
+          )
+        }
+      </Layout>
+    )
+  }
+}
+
+export default JoinPage
