@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 import { Result, Button } from 'antd';
 import { login, getProfile, logout } from "../utils/auth"
 
+const windowGlobal = typeof window !== 'undefined' && window
+
 class JoinPage extends React.Component {
   login = () => {
     login()
@@ -13,7 +15,7 @@ class JoinPage extends React.Component {
   constructor() {
     super()
     this.state = {
-      loggedIn: localStorage.getItem("isLoggedIn"),
+      loggedIn: windowGlobal.localStorage.getItem("isLoggedIn"),
       user: getProfile()
     }
   }
