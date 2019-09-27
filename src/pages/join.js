@@ -3,7 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Result, Button } from 'antd';
-import { login, getProfile } from "../utils/auth"
+import { login, getProfile, logout } from "../utils/auth"
+
+const windowGlobal = typeof window !== 'undefined' && window
 
 class JoinPage extends React.Component {
   login = () => {
@@ -13,7 +15,7 @@ class JoinPage extends React.Component {
   constructor() {
     super()
     this.state = {
-      loggedIn: localStorage.getItem("isLoggedIn"),
+      loggedIn: windowGlobal.localStorage.getItem("isLoggedIn"),
       user: getProfile()
     }
   }
@@ -24,7 +26,7 @@ class JoinPage extends React.Component {
         <SEO title="Join hyperlog.Club" />
         {
           !this.state.loggedIn && (
-            <Button onClick={this.login.bind(this)}>
+            <Button type="primary" shape="round" size="large" onClick={this.login.bind(this)}>
               Log In
             </Button>
           )
@@ -36,8 +38,8 @@ class JoinPage extends React.Component {
               title={`Congrats on joining the community, ${this.state.user.name}!`}
               subTitle="Details of joining our discord server will be mailed to you within 24 hours."
               extra={[
-                <Button type="primary" key="console">
-                  Join Discord
+                <Button type="primary" key="console" onClick={e => { logout(); login() }}>
+                  Add another user
                 </Button>
               ]}
             />

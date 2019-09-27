@@ -70,3 +70,8 @@ export const handleAuthentication = () => {
 export const getProfile = () => {
   return user
 }
+
+export const logout = () => {
+  localStorage.setItem("isLoggedIn", false)
+  auth.logout()
+}
