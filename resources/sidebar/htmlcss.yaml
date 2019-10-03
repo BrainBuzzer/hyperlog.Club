@@ -1,5 +1,24 @@
-- title: Preparing Your Environment
-  key: Preparing environment
+- title: Introduction
+  key: Introduction
   items:
-    - title: Set up development
-      link: /resources/htmlcss/set-up-dev/
+    - title: The Internet
+      link: /resources/htmlcss/the-internet/
+    - title: The World Wide Web
+      link: /resources/htmlcss/the-world-wide-web/
+    - title: A Web Browser
+      link: /resources/htmlcss/a-web-browser/
+- title: HTML Basics
+  key: HTML-Basics
+  items:
+    - title: HTML Syntax
+      link: /resources/htmlcss/html-syntax/
+    - title: HTML Block and Inline
+      link: /resources/htmlcss/html-block-and-inline/
+    - title: HTML Hierarchy
+      link: /resources/htmlcss/html-hierarchy/
+    - title: HTML Hierarchy
+      link: /resources/htmlcss/html-hierarchy/
+    - title: HTML Semantics
+      link: /resources/htmlcss/html-semantics/
+    - title: HTML Formatting
+      link: /resources/htmlcss/html-formatting/
