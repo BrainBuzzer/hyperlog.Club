@@ -1,12 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/resources/layout'
+import "./post-style.css"
 
 const PostResource = ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <Layout link={`/resources/${post.frontmatter.slug}/`} resource={post.frontmatter.resource} title={post.frontmatter.title}>
+      <Layout className="content" link={`/resources/${post.frontmatter.slug}/`} resource={post.frontmatter.resource} title={post.frontmatter.title}>
         {post.html}
       </Layout>
     </>
