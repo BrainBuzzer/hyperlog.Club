@@ -71,3 +71,20 @@
       link: /resources/htmlcss/css-font-shorthand/
     - title: CSS text properties
       link: /resources/htmlcss/css-text-properties/
+- title: CSS Box Model
+  key: CSS-Box-Model
+  items:
+    - title: CSS background
+      link: /resources/htmlcss/css-background/
+    - title: CSS display
+      link: /resources/htmlcss/css-display/
+    - title: CSS height and width
+      link: /resources/htmlcss/css-height-and-width/
+    - title: CSS border
+      link: /resources/htmlcss/css-border/
+    - title: CSS padding
+      link: /resources/htmlcss/css-padding/
+    - title: CSS margin
+      link: /resources/htmlcss/css-margin/
+    - title: CSS size shorthand wheel
+      link: /resources/htmlcss/css-size-shorthand-wheel/
