@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Resources to learn programming" />
     <h1>Learn Programming Languages</h1>
     <div className="cards-list">
-      <div className="card" onClick={() => { navigate("/resources/htmlcss/set-up-dev/") }}>
+      <div className="card" onClick={() => { navigate("/resources/htmlcss/the-internet/") }}>
         <div className="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
         <div className="card_title title-white">
           <p>HTML & CSS</p>
