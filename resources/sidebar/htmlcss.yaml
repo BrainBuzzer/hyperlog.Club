@@ -58,3 +58,16 @@
       link: /resources/htmlcss/css-size-units/
     - title: CSS Reset
       link: /resources/htmlcss/css-reset/
+- title: CSS Text
+  key: CSS-Text
+  items:
+    - title: CSS font-family
+      link: /resources/htmlcss/css-font-family/
+    - title: CSS font properties
+      link: /resources/htmlcss/css-font-properties/
+    - title: CSS line-height
+      link: /resources/htmlcss/css-line-height/
+    - title: CSS font shorthand
+      link: /resources/htmlcss/css-font-shorthand/
+    - title: CSS text properties
+      link: /resources/htmlcss/css-text-properties/
