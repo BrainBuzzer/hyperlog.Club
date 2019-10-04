@@ -88,3 +88,12 @@
       link: /resources/htmlcss/css-margin/
     - title: CSS size shorthand wheel
       link: /resources/htmlcss/css-size-shorthand-wheel/
+- title: CSS Positioning
+  key: CSS-Positioning
+  items:
+    - title: The Flow
+      link: /resources/htmlcss/css-the-flow/
+    - title: CSS Position
+      link: /resources/htmlcss/css-position/
+    - title: CSS Float
+      link: /resources/htmlcss/css-float/
