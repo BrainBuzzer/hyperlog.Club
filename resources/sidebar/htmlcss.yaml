@@ -39,3 +39,22 @@
       link: /resources/htmlcss/html-structure/
     - title: HTML Forms
       link: /resources/htmlcss/html-forms/
+- title: CSS Basics
+  key: CSS-Basics
+  items:
+    - title: Why CSS Exists
+      link: /resources/htmlcss/why-css-exists/
+    - title: CSS Syntax
+      link: /resources/htmlcss/css-syntax/
+    - title: CSS Selectors
+      link: /resources/htmlcss/css-selectors/
+    - title: CSS Inheritance
+      link: /resources/htmlcss/css-inheritance/
+    - title: CSS Priority
+      link: /resources/htmlcss/css-priority/
+    - title: CSS Color Units
+      link: /resources/htmlcss/css-color-units/
+    - title: CSS Size Units
+      link: /resources/htmlcss/css-size-units/
+    - title: CSS Reset
+      link: /resources/htmlcss/css-reset/
