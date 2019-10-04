@@ -31,8 +31,9 @@ Each of these programs will retrieve information from a **server**, where someth
 
 A **server** can be considered a _dedicated_ computer always connected to the Internet, whose sole purpose is to **deliver** content.
 
-Although any device connected to the Internet can be both a client and a server at the same time, most devices we use are considered **clients**, because we only _retrieve_ data, and don't deliver any.
-{: .info}
+<div class="info">
+Although any device connected to the Internet can be both a client and a server at the same time, most devices we use are considered <b>clients</b>, because we only <i>retrieve</i> data, and don't deliver any.
+</div>
 
 ### IP Address
 
@@ -118,8 +119,9 @@ This URL is **unique** and defines
 * _where_ to find something across the internet `hyperlog.club/resources/htmlcss/the-internet/`
 * _how_ the computer is supposed to read it `https://`
 
-URLs can be more complex-looking. You can read about the [anatomy of an URL](https://doepud.co.uk/blog/anatomy-of-a-url).
-{: .info}
+<div class="info">
+URLs can be more complex-looking. You can read about the <a href="https://doepud.co.uk/blog/anatomy-of-a-url">anatomy of an URL</a>.
+</div>
 
 Internet
 : A very large **network** of **computers** connected to each other.

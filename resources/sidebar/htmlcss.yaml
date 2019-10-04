@@ -39,3 +39,76 @@
       link: /resources/htmlcss/html-structure/
     - title: HTML Forms
       link: /resources/htmlcss/html-forms/
+- title: CSS Basics
+  key: CSS-Basics
+  items:
+    - title: Why CSS Exists
+      link: /resources/htmlcss/why-css-exists/
+    - title: CSS Syntax
+      link: /resources/htmlcss/css-syntax/
+    - title: CSS Selectors
+      link: /resources/htmlcss/css-selectors/
+    - title: CSS Inheritance
+      link: /resources/htmlcss/css-inheritance/
+    - title: CSS Priority
+      link: /resources/htmlcss/css-priority/
+    - title: CSS Color Units
+      link: /resources/htmlcss/css-color-units/
+    - title: CSS Size Units
+      link: /resources/htmlcss/css-size-units/
+    - title: CSS Reset
+      link: /resources/htmlcss/css-reset/
+- title: CSS Text
+  key: CSS-Text
+  items:
+    - title: CSS font-family
+      link: /resources/htmlcss/css-font-family/
+    - title: CSS font properties
+      link: /resources/htmlcss/css-font-properties/
+    - title: CSS line-height
+      link: /resources/htmlcss/css-line-height/
+    - title: CSS font shorthand
+      link: /resources/htmlcss/css-font-shorthand/
+    - title: CSS text properties
+      link: /resources/htmlcss/css-text-properties/
+- title: CSS Box Model
+  key: CSS-Box-Model
+  items:
+    - title: CSS background
+      link: /resources/htmlcss/css-background/
+    - title: CSS display
+      link: /resources/htmlcss/css-display/
+    - title: CSS height and width
+      link: /resources/htmlcss/css-height-and-width/
+    - title: CSS border
+      link: /resources/htmlcss/css-border/
+    - title: CSS padding
+      link: /resources/htmlcss/css-padding/
+    - title: CSS margin
+      link: /resources/htmlcss/css-margin/
+    - title: CSS size shorthand wheel
+      link: /resources/htmlcss/css-size-shorthand-wheel/
+- title: CSS Positioning
+  key: CSS-Positioning
+  items:
+    - title: The Flow
+      link: /resources/htmlcss/css-the-flow/
+    - title: CSS Position
+      link: /resources/htmlcss/css-position/
+    - title: CSS Float
+      link: /resources/htmlcss/css-float/
+- title: Advanced CSS
+  key: Advanced-CSS
+  items:
+    - title: CSS psuedo-classes
+      link: /resources/htmlcss/css-psuedo-classes/
+    - title: CSS gradients
+      link: /resources/htmlcss/css-gradients/
+    - title: CSS transitions
+      link: /resources/htmlcss/css-transitions/
+    - title: CSS animations
+      link: /resources/htmlcss/css-animations/
+    - title: CSS transform
+      link: /resources/htmlcss/css-transform/
+    - title: CSS responsiveness
+      link: /resources/htmlcss/css-responsiveness/

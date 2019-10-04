@@ -29,8 +29,9 @@ To tell the browser that the HTML document is an HTML 5, just start your documen
 
 That's it. Just set it and forget it.
 
+<div class="info">
 You may wonder why this HTML 5 doctype doesn't mention the number "5". The W3C thought the previous doctype definitions were too confusing and took the opportunity to simplify it by removing any mention of the HTML version.
-{: .info}
+</div>
 
 ### The <html> element
 

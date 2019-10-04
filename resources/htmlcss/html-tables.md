@@ -257,6 +257,7 @@ The "Michael Jackson Singles" cell spans across 2 columns, so the following row 
 
 Because the cell "1979" spans across 3 rows, the 2 following rows only include a **one** cell, to allow space for the "1979" column.
 
-It can be hard to keep track of how many cells are either missing or superfluous. One easy way to build a complete 2 by 4 table first, and then _remove_ cells while adding `colspan` and `rowspan` attributes.  
-In our case, we are supposed to have **8** cells. We only write **5** cells, but the `colspan="2"` and `rowspan="3"` add **3 additional cells**.
-{: .info}
+<div class="info">
+It can be hard to keep track of how many cells are either missing or superfluous. One easy way to build a complete 2 by 4 table first, and then <i>remove</i> cells while adding `colspan` and <code>rowspan</code> attributes.  
+In our case, we are supposed to have <b>8</b> cells. We only write <b>5</b> cells, but the <code>colspan="2"</code> and <code>rowspan="3"</code> add <b>3 additional cells</b>.
+<div>
