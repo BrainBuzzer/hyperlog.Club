@@ -1,0 +1,38 @@
+.markdown-section .result {
+  line-height: 1.6;
+  box-sizing: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  position: relative;
+  border: 1px solid #f4f1ce;
+  color: #000;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.markdown-section .result:before {
+  background: #f4f1ce;
+  color: rgba(0,0,0,0.5);
+  content: "Result";
+  display: inline-block;
+  font-family: "Source Sans Pro","Roboto","Open Sans",Arial,sans-serif;
+  font-size: .6rem;
+  font-weight: 700;
+  height: 1rem;
+  left: -1px;
+  letter-spacing: .1em;
+  line-height: 1rem;
+  padding: 0 .5em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.markdown-section .info {
+  margin: 1em 0;
+  background: rgba(51,169,220,0.1);
+  border-left: .25em solid #33a9dc;
+  color: rgba(0,0,0,0.5);
+  padding: 25px 30px;
+}
+ 

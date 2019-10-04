@@ -1,0 +1,141 @@
+---
+title: The Internet
+slug: htmlcss/the-internet
+author: Aditya Giri, Marksheet.io
+resource: htmlcss
+---
+
+The Internet is not the same as the Web. The Internet is bigger, older, and more varied.
+
+Imagine how **roads** are _interconnected_ throughout the world: small streets connect to city lanes that turn into regional roads who then merge with national and international highways. You can drive from your house to any other house in the world[^1]. There is no actual center in this road network either.
+
+The Internet is similar. But instead of roads, it's **cables**. And instead of houses, it's **computers**. And instead of cars traveling on this network, it's **information**.
+
+It was invented in 1969 to connect computers across the US. Nowadays, _billions_ of devices (including PCs, laptops, mobile phones, TVs, fridges...) are **interconnected**.
+
+### Client and Server
+
+Usually, a connection on the Internet takes place between **2** computers only:
+
+* one that **has** the information (the _server_)
+* one that **wants** it (the _client_).
+
+A **client** is a program that can take up many forms:
+
+* a Web browser (like Firefox)
+* an email client (like Outlook)
+* a messenger app (like Whatsapp)
+* a video streaming service (like Netflix)
+
+Each of these programs will retrieve information from a **server**, where something is stored (a website, your emails, messages, movies). Although client programs also send information to the server, they usually don't store it, while servers do.
+
+A **server** can be considered a _dedicated_ computer always connected to the Internet, whose sole purpose is to **deliver** content.
+
+<div class="info">
+Although any device connected to the Internet can be both a client and a server at the same time, most devices we use are considered <b>clients</b>, because we only <i>retrieve</i> data, and don't deliver any.
+</div>
+
+### IP Address
+
+Like every house has a specific and _unique_ postal address, each computer connected to the Internet is given an **IP address**, in order to be identified on the network.
+
+An IP address usually looks like a combination of 4 numbers: `91.198.174.192`.
+
+### Domains
+
+Although IP addresses are useful for computers to tell each other apart thanks to their uniqueness, they are hard to read and remember for us humans.
+
+That is why **domains** were created in 1985. They _associate_ an IP address like `91.198.174.192` with a string of **text** like `wikipedia.org`. As a result, both are **interchangeable**: you can go to <https://91.198.174.192> or <https://wikipedia.org> and end up on the exact same website.
+
+A domain has **3** parts, that are read from right to left:
+
+* **Top-Level Domain** (or TLD): there are generic ones (`.com`, `.org`, `.net`) and country-specific ones (`.us`, `.nl`, `.fr`).
+* **Domain name**: a name like `wikipedia` or `marksheet`, that can include letters, numbers, but no space or dot.
+* **Subdomain** (optional). Although this 3rd part is optional, most websites use `www` as the default subdomain.
+
+Think of domains as a way to **name** computers connected to the Internet.
+
+_How do I buy a domain?_{:.question}
+You don't actually _buy_ a domain, but actually **rent** it from whoever is managing the TLD you're aiming for.
+Companies who manage Internet domains are called **domain registrars**. The most famous ones are [Namecheap](https://www.namecheap.com/) and [Gandi](https://www.gandi.net/).
+
+### Protocols
+
+The purpose of interconnecting all these computers is for them to **interact** with each other. And like humans talk in different _languages_, computers on the Internet talk using **protocols**.
+
+Each of them serves a different purpose:
+
+<div class="table">
+  <table>
+    <tr>
+      <th>Protocol</th>
+      <th>Used for</th>
+      <th>Created in</th>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="File Transfer Protocol">FTP</abbr>
+      </td>
+      <td>File transfer</td>
+      <td>1971</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="Simple Mail Transfer Protocol">SMTP</abbr>
+      </td>
+      <td>Sending Emails</td>
+      <td>1971</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="Internet Message Access Protocol">IMAP</abbr>
+      </td>
+      <td>Receiving Emails</td>
+      <td>1986</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="Internet Relay Chat">IRC</abbr>
+      </td>
+      <td>Chat</td>
+      <td>1988</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="HyperText Transfer Protocol">HTTP</abbr>
+      </td>
+      <td>Browsing HTML documents (Webpages)</td>
+      <td>1989</td>
+    </tr>
+  </table>
+</div>
+
+### URL
+
+Now that we've seen how domains and protocols, we can build a **URL**: a **U**niform **R**esource **L**ocator.
+
+This URL is **unique** and defines
+
+* _where_ to find something across the internet `hyperlog.club/resources/htmlcss/the-internet/`
+* _how_ the computer is supposed to read it `https://`
+
+<div class="info">
+URLs can be more complex-looking. You can read about the <a href="https://doepud.co.uk/blog/anatomy-of-a-url">anatomy of an URL</a>.
+</div>
+
+Internet
+: A very large **network** of **computers** connected to each other.
+
+Protocol
+: A set of rules, like a **language**, in which computers **communicate** with each other.
+
+IP address
+: A combination of **numbers** like `91.198.174.192` which acts like a **unique identifier** for a computer connected to the Internet
+
+Domain
+: A **text** like `hyperlog.club` which acts like a **unique identifier** for a computer connected to the Internet.
+The difference with IP addresses is that domains are easier to read for **humans**.
+
+[^1]: Apart from oceans obviously.
+
+*[SMTP]: Simple Mail Transfer Protocol

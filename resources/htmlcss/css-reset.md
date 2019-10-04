@@ -1,0 +1,32 @@
+---
+title: CSS Reset
+slug: htmlcss/css-reset
+author: Aditya Giri, Marksheet.io
+resource: htmlcss
+---
+
+There is no such thing as an _unstyled_ HTML element. Every webpage uses at least one CSS: the **User agent Stylesheet**.
+
+### The user agent stylesheet
+
+This CSS file is _included_ in the browser and is called:
+
+* **every time** a webpage is rendered
+* **before** any of _our_ CSS is applied
+
+Although each browser has its own User agent CSS, they are all fairly similar.
+
+### Applying a CSS reset
+
+A browser's _default_ styles can **interfere** with the styles we _actually_ want to apply. That's why a **CSS reset** has been devised to provide a **consistent base** across all browsers.
+
+It's particularly useful for normalizing the text size and removing all margins.
+
+You can find (and download) the [HTML 5 reset.css](https://marksheet.io/css/reset.css) of this website. Just include it in your `<head>` before your own stylesheet.
+
+```html
+<head>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+```
