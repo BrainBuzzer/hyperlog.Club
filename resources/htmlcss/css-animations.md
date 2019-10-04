@@ -74,8 +74,9 @@ Before applying animations to HTML elements, you need to **write animations usin
 * `50%` is the step halfway through the animation
 * `100%` is the last step
 
-You can also use the keywords `from` and `to` instead of `0%` and `100%` respectively.
-{: .info}
+<div class="info">
+You can also use the keywords <code>from</code> and <code>to</code> instead of <code>0%</code> and <code>100%</code> respectively.
+</div>
 
 You can define _as many keyframes as you want_, like `33%`, `4%` or even `29.86%`. In practice, you'll only write a few.
 
@@ -144,8 +145,9 @@ Just like [transition timing functions](/css-transitions.html#transition-timing-
 
 It defaults to `ease`.
 
-Because CSS animations use keyframes, you can set a **linear** timing function and **simulate** an specific cubic bezier curve by defining a _lot_ of _very specific_ keyframes. Check out [Bounce.js](https://bouncejs.com/) to generate advanced animations.
-{: .info}
+<div class="info">
+Because CSS animations use keyframes, you can set a <b>linear</b> timing function and <b>simulate</b> an specific cubic bezier curve by defining a <i>lot</i> of <i>very specific</i> keyframes. Check out <a target="_blank" href="http://bouncejs.com">Bounce.js</a> to generate advanced animations.
+</div>
 
 ### animation-delay
 

@@ -70,7 +70,6 @@ p{ animation: translating 4s linear infinite;}
 </style>
 
 Remember: `transform` is the CSS **property**, `translate()` is the CSS **value** _attached to_ that property (and also happens to be a function).
-{: .focus}
 
 You can use `translateX()` and `translateY()` to only move your element along the **x** and **y** axis respectively.
 
@@ -282,5 +281,6 @@ p{ animation: zooming 5s alternate;}
 
 The green block rise `200px` _"upwards"_, as if coming closer to us, along the z axis.
 
-`perspective: 500;` needs to be applied to the parent element in order for the 3d space to become active. Alternatively, `transform: perspective(500px);` can be used as well.
-{: .info}
+<div class="info">
+<code>perspective: 500;</code> needs to be applied to the parent element in order for the 3d space to become active. Alternatively, <code>transform: perspective(500px);</code> can be used as well.
+</div>

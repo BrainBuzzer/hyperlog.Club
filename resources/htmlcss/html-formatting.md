@@ -71,8 +71,9 @@ Anyway, like a regular space, a tabulation is **invisible**. It's also ignored b
 
 If you want to add space _before_ a word, you'll have to use CSS, which we'll cover in the next chapter.
 
-If you want to **close** an HTML element, you first have to close all its _children_ elements.
-{: .info}
+<div class="info">
+If you want to <b>close</b> an HTML element, you first have to close all its <i>children</i> elements.
+</div>
 
 ### Tree format
 

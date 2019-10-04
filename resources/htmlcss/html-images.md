@@ -52,8 +52,9 @@ Every image has **2 dimensions**: a **width** and a **height**. The previously s
 
 When inserting an image in HTML, you **don't need to specify its dimensions**: the browser will automatically display it in **full size**.
 
+<div class="info">
 If you want to alter the dimensions of an image, although it is possible in HTML, it's recommended to use CSS, as we'll see in later chapters.
-{: .info}
+</div>
 
 ### Block or inline?
 

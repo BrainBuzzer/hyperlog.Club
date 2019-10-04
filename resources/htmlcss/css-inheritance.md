@@ -30,8 +30,9 @@ body{ color: grey;}
 
 All child and descendant elements will **inherit** the value `grey` from their common ancestor `body`, which naturally encompasses _all_ elements.
 
-We could also use the `html` tag.
-{: .info}
+<div class="info">
+We could also use the <code>html</code> tag.
+</div>
 
 ### Inherited properties
 
@@ -41,5 +42,6 @@ Only a few CSS properties can be inherited from ancestors. They are mainly **tex
 * font (family, size, style, weight)
 * line-height
 
-Some HTML elements don't inherit from their ancestors. Links for example don't inherit the `color` property.
-{: .info}
+<div class="info">
+Some HTML elements don't inherit from their ancestors. Links for example don't inherit the <code>color</code> property.
+</div>

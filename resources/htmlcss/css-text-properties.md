@@ -24,8 +24,9 @@ The most used values are:
 
 These values correspond to the same alignment buttons you find in Microsoft Word or Photohop.
 
-The `justify` value is **not** recommended. Although it might look visually appealing because it forms a rectangle of text, it is very hard to read.
-{: .info}
+<div class="info">
+The <code>justify</code> value is <b>not</b> recommended. Although it might look visually appealing because it forms a rectangle of text, it is very hard to read.
+</div>
 
 The `text-align` default value is `start`. Basically, `start` can either be `left` or `right`, depending on the **direction** set on the HTML document.
 
@@ -76,8 +77,9 @@ blockquote{ text-indent: 30px;}
 
 Notice how only the **first line** is indented. If you want to offset the whole block of text, use [paddings](/css-padding.html).
 
-As for the `font-size` property, you can use `px`, `em`, or even `%` values.
-{: .info}
+<div class="info">
+As for the <code>font-size</code> property, you can use <code>px</code>, <code>em</code>, or even <code>%</code> values.
+</div>
 
 
 ### text-shadow
@@ -101,5 +103,6 @@ h1{ text-shadow: 0 2px 5px rgba(0,0,0,0.5);}
 
 Only the `x` and `y` values are required. The `blur` defaults to `0` (zero), while the `color` defaults to the color of the text.
 
+<div class="info">
 This property is tricky, so use it with parsimony and don't go crazy!
-{: .info}
+</div>

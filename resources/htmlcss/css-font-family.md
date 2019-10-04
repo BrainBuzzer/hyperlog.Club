@@ -17,8 +17,9 @@ Fonts are grouped in 5 **generic** families:
 * `cursive`
 * `fantasy`
 
-`cursive` and `fantasy` are never used.
-{: .info}
+<div class="info">
+<code>cursive</code> and <code>fantasy</code> are never used.
+</div>
 
 Because the `font-family` property is inherited by all HTML children elements, you can apply a font for the whole HTML document by applying it on the ancestor of all HTML elements: the `<body>` element.
 

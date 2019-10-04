@@ -70,8 +70,9 @@ How CSS works is by **selecting** an HTML element (like a paragraph), choosing a
 p{ color: red;}
 ```
 
-The word _"Style"_ can be deceiving. You might think CSS is only used to change the text's color, size, and font. But CSS is able to define an HTML document's **layout**, by defining heights, widths, inner and outer margins, positions, columns...
-{: .info}
+<div class="info">
+The word <i>"Style"</i> can be deceiving. You might think CSS is only used to change the text's color, size, and font. But CSS is able to define an HTML document's <b>layout</b>, by defining heights, widths, inner and outer margins, positions, columns...
+</div>
 
 ### Where do I write CSS?
 

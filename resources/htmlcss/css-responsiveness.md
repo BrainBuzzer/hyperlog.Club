@@ -79,8 +79,9 @@ body{ font-size: 18px;}
 
 The font size will only be set to `20px` if the viewport is at least _1000px wide_ **and** in _landscape_ mode (as opposed to portrait mode).
 
-You can also use `not` and `only`. These are called [logical operators](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries#Logical_operators).
-{: .info}
+<div class="info">
+You can also use <code>not</code> and <code>only</code>. These are called <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries#Logical_operators">logical operators</a>.
+</div>
 
 #### Several CSS rules
 
@@ -147,8 +148,9 @@ The **orientation** parameter can detect if the viewport is in either of the fol
 
 Although it's mostly used for tablets and smartphones, be aware that even on a widescreen monitor, the viewport can be in portrait if its width is smaller than its height.
 
+<div class="info">
 On mobile, even if you're holding your device in portrait mode, if the keyboard shows up, the viewport can be considered as landscape, considering how its height becomes smaller than its width.
-{: .info}
+</div>
 
 #### resolution
 
@@ -200,8 +202,9 @@ A use case would be to provide a default background image for every device, and 
 
 Keep in mind that the **background size must be set**. Otherwise, the `@2x` Retina image would take twice the space.
 
-The `@2x` suffix is just Apple's notation for Retina images, and has been adopted as the _de facto_ default notation in CSS.
-{: .info}
+<div class="info">
+The <code>@2x</code> suffix is just Apple's notation for Retina images, and has been adopted as the <i>de facto</i> default notation in CSS.
+</div>
 
 ### Mobile-first or desktop-first
 

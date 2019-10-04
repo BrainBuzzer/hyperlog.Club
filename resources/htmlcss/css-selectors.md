@@ -36,8 +36,9 @@ Of all HTML attributes, the `class` attribute is the most important for CSS. It 
 
 On one side, there is the HTML `class` attribute with the value `date`. It must match the name of the CSS class.
 
+<div class="info">
 You can use any name for your CSS class, as long as it doesn't start with a number.
-{: .info}
+</div>
 
 The `.date` class selector will target all HTML elements that have the `class="date"` attribute. So, the following HTML elements will **all** be styled:
 

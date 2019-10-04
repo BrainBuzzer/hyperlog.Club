@@ -20,8 +20,9 @@ The unitless values basically act like percentages. So `150%` is equal to `1.5`.
 
 The purpose of the `line-height` is to define a readable line spacing for your text. Because readibility is dependent upon the size of the text, it is recommended to use a **dynamic** value that is relative to the size of the text. Using `px` is therefore not recommended because it defines a **static** value.
 
-In some cases, using `px` does come in handy (when you wish to vertically align text according to another element and not according to the font size).
-{: .info}
+<div class="info">
+In some cases, using <code>px</code> does come in handy (when you wish to vertically align text according to another element and not according to the font size).
+</div>
 
 Because using `%` or `em` values can have unexpected values, the recommended method is **unitless numbers**:
 

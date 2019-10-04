@@ -68,8 +68,9 @@ strong{ font-size: 150%;}
 
 For example, if the parent has a font-size of `20px` and you apply `font-size: 0.8em` to a child element, this child element will render a font-size of `16px`.
 
-Don't confuse the `em` CSS size unit and the `em` CSS selector, which targets `<em>` HTML elements
-{: .info}
+<div class="info">
+Don't confuse the <code>em</code> CSS size unit and the <code>em</code> CSS selector, which targets <code>&lt;em&gt;</code> HTML elements
+</div>
 
 The `em` unit is interesting as you define font sizes of HTML elements _relative_ to one another. To design a pleasing and easy to read webpage, you need consistent visual depth. For example, you want your `<h1>` to be twice as big as your body text, your `<h2>` only 1.5 times as big, and your sidebar slightly smaller. This could easily be achieved in CSS:
 

@@ -23,7 +23,6 @@ Because we've only set the width, the blockquote remains fluid in **height**: th
 By setting the dimensions of an element, it will remain fixed no matter the length of its content.
 
 What happens if the content is longer than the element can contain?
-{: .question}
 
 Because we prevent the element to dynamically alter its dimensions, there is a chance the content will be longer than the element accomodates for and will subsequently **overflow**.
 

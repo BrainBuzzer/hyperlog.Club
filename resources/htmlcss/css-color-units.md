@@ -54,8 +54,9 @@ The `rgba` color unit is `rgb` to which we add an **alpha** value (ranging from 
 body{ color: rgba(0, 0, 0, 0.8);}
 ```
 
+<div class="info">
 A slightly transparent black color.
-{: .info}
+</div>
 
 The purpose of a color being transparent is to blend with the background, and consequently look slightly different depending on the context. It is particularly useful for **background colors**.
 
@@ -96,8 +97,9 @@ I consider `hsl` to be **human-readable**, whereas `rgb` is more **computer-read
 body{ color: hsla(4, 68%, 56%, 0.5);}
 ```
 
+<div class="info">
 A transparent red color.
-{: .info}
+</div>
 
 ### Hexadecimal
 

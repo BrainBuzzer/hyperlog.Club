@@ -109,8 +109,9 @@ In `index.html` you could write the following link:
 </p>
 ```
 
-Remember: websites are hosted on **computers** just like the one you're currently using. They are simply called **"servers"** because their sole purpose is to host websites. But they still have **files** and **folders** like "regular" computers.
-{: .info}
+<div class="info">
+Remember: websites are hosted on <b>computers</b> just like the one you're currently using. They are simply called <b>"servers"</b> because their sole purpose is to host websites. But they still have <b>files</b> and <b>folders</b> like "regular" computers.
+</div>
 
 ### Absolute URLs
 

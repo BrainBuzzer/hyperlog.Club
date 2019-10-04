@@ -86,8 +86,9 @@ This pseudo-class happens when an HTML element is **in focus**. This is particul
   <input class="form-input" placeholder="First name">
 </div>
 
-The `outline: none;` rule removes the glow from the input.
-{: .info}
+<div class="info">
+The <code>outline: none;</code> rule removes the glow from the input.
+</div>
 
 ### :first-child and :last-child
 
@@ -195,8 +196,9 @@ li:nth-child(3n){ background: hotpink;}
 
 In our case, `n` starts at **zero** and ends at **six**.
 
-Computers start counting at **zero**. And because there are seven elements in our list, we will go up until six, because 0-1-2-3-4-5-6 represents **seven** items.
-{: .info}
+<div class="info">
+Computers start counting at <b>zero</b>. And because there are seven elements in our list, we will go up until six, because 0-1-2-3-4-5-6 represents <b>seven</b> items.
+</div>
 
 You can read `:nth-child(3n)` as _"Target each element whose position is dividable by 3"_. In our case, it targeted both the 3rd and 6th list items:
 

@@ -27,3 +27,12 @@
   text-transform: uppercase;
   top: 0;
 }
+
+.markdown-section .info {
+  margin: 1em 0;
+  background: rgba(51,169,220,0.1);
+  border-left: .25em solid #33a9dc;
+  color: rgba(0,0,0,0.5);
+  padding: 25px 30px;
+}
+ 

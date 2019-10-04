@@ -28,8 +28,9 @@ Although I've defined all 6 properties, only the `font-size` and `font-family` a
 body{ font: bold 16px/1.5 Arial, sans-serif;}
 ```
 
-Because `font-style` and `font-variant` have not been defined, they'll use their default value `normal`.
-{: .info}
+<div class="info">
+Because <code>font-style</code> and <code>font-variant</code> have not been defined, they'll use their default value <code>normal</code>.
+</div>
 
 Beware! If you've previously define one of the font properties and use the `font` shorthand afterwards, it will **override** the previously defined values.
 
@@ -38,7 +39,8 @@ body{ font-size: 16px; line-height: 1.5;}
 ul{ font: 14px Georgia, serif;}
 ```
 
-In the `font` shorthand, the `line-height` has not been defined, and will lose its ancestor's value of `1.5` and will revert to its default value `medium` (which is usually `1.2`).
-{: .info}
+<div class="info">
+In the <code>font</code> shorthand, the <code>line-height</code> has not been defined, and will lose its ancestor's value of <code>1.5</code> and will revert to its default value <code>medium</code> (which is usually <code>1.2</code>).
+</div>
 
 Other shorthand properties exist, like `background`, `border` and `margin`.

@@ -68,8 +68,9 @@ blockquote{
 
 Now we have 2 selectors and 2 properties. We consequently have a _set_ of selectors and a _set_ of properties (with their respective values).
 
+<div class="info">
 We can have multiple selectors, multiple properties, and sometimes (but rarely) multiple values.
-{: .info}
+</div>
 
 ### Comments
 
