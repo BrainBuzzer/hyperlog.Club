@@ -97,3 +97,18 @@
       link: /resources/htmlcss/css-position/
     - title: CSS Float
       link: /resources/htmlcss/css-float/
+- title: Advanced CSS
+  key: Advanced-CSS
+  items:
+    - title: CSS psuedo-classes
+      link: /resources/htmlcss/css-psuedo-classes/
+    - title: CSS gradients
+      link: /resources/htmlcss/css-gradients/
+    - title: CSS transitions
+      link: /resources/htmlcss/css-transitions/
+    - title: CSS animations
+      link: /resources/htmlcss/css-animations/
+    - title: CSS transform
+      link: /resources/htmlcss/css-transform/
+    - title: CSS responsiveness
+      link: /resources/htmlcss/css-responsiveness/
