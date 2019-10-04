@@ -16,9 +16,26 @@
       link: /resources/htmlcss/html-block-and-inline/
     - title: HTML Hierarchy
       link: /resources/htmlcss/html-hierarchy/
-    - title: HTML Hierarchy
-      link: /resources/htmlcss/html-hierarchy/
     - title: HTML Semantics
       link: /resources/htmlcss/html-semantics/
     - title: HTML Formatting
       link: /resources/htmlcss/html-formatting/
+    - title: A Valid HTML Document
+      link: /resources/htmlcss/a-valid-html-document/
+- title: HTML Content
+  key: HTML-Content
+  items:
+    - title: HTML Text
+      link: /resources/htmlcss/html-text/
+    - title: Inline Semantics
+      link: /resources/htmlcss/inline-semantics/
+    - title: HTML Links
+      link: /resources/htmlcss/html-links/
+    - title: HTML Images
+      link: /resources/htmlcss/html-images/
+    - title: HTML Tables
+      link: /resources/htmlcss/html-tables/
+    - title: HTML Structure
+      link: /resources/htmlcss/html-structure/
+    - title: HTML Forms
+      link: /resources/htmlcss/html-forms/
