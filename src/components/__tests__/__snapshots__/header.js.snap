@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class=""
+    >
+      <header
+        class="header"
+      >
+        <div
+          class="ant-row"
+        >
+          <div
+            class="ant-col ant-col-6"
+          >
+            <div
+              class="header-logo"
+            >
+              h
+              <span
+                class="header-logo-letter-y"
+              >
+                y
+              </span>
+              perlog
+              <span
+                class="header-logo-club"
+              >
+                .Club
+              </span>
+            </div>
+          </div>
+          <div
+            class="ant-col ant-col-18"
+          >
+            <div
+              style="float: right; margin-right: 1rem;"
+            >
+              <ul
+                class="ant-menu ant-menu-light ant-menu-root ant-menu-horizontal"
+                role="menu"
+              >
+                <li
+                  class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                  role="menuitem"
+                  style="display: none;"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-menu-submenu-title"
+                  >
+                    <span>
+                      ···
+                    </span>
+                    <i
+                      class="ant-menu-submenu-arrow"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="ant-menu-item ant-menu-item-selected"
+                  role="menuitem"
+                >
+                  <a
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                  role="menuitem"
+                  style="display: none;"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-menu-submenu-title"
+                  >
+                    <span>
+                      ···
+                    </span>
+                    <i
+                      class="ant-menu-submenu-arrow"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="ant-menu-item"
+                  role="menuitem"
+                >
+                  <a
+                    href="/resources"
+                  >
+                    Resources
+                  </a>
+                </li>
+                <li
+                  class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                  role="menuitem"
+                  style="display: none;"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-menu-submenu-title"
+                  >
+                    <span>
+                      ···
+                    </span>
+                    <i
+                      class="ant-menu-submenu-arrow"
+                    />
+                  </div>
+                </li>
+                <li
+                  aria-disabled="true"
+                  class="ant-menu-item join-menu ant-menu-item-disabled"
+                  role="menuitem"
+                  style="cursor: default;"
+                >
+                  <button
+                    class="ant-btn ant-btn-primary ant-btn-round"
+                    type="button"
+                  >
+                    <a
+                      href="/join"
+                    >
+                      Join Community
+                    </a>
+                  </button>
+                </li>
+                <li
+                  class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu"
+                  role="menuitem"
+                  style="visibility: hidden; position: absolute; display: none;"
+                >
+                  <div
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-menu-submenu-title"
+                  >
+                    <span>
+                      ···
+                    </span>
+                    <i
+                      class="ant-menu-submenu-arrow"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</DocumentFragment>
+`;

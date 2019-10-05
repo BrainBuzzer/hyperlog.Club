@@ -2,6 +2,11 @@
   hyperlog.Club
 </h1>
 
+<div align="center">
+<img src="https://coveralls.io/repos/github/BrainBuzzer/hyperlog.Club/badge.svg?branch=master" alt="Coveralls Status" />
+<img src="https://circleci.com/gh/BrainBuzzer/hyperlog.Club.svg?style=svg" alt="CircleCI Status">
+</div>
+
 A community for newcoming programmers to learn new programming languages and leverage the power of resources.
 
 ## 🚀 Quick start
