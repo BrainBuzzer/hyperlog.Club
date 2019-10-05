@@ -34,6 +34,8 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.3.0",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.17",
     "identity-obj-proxy": "^3.0.0",
@@ -53,7 +55,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
