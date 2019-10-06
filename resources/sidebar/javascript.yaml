@@ -9,3 +9,18 @@
       link: /resources/js/code-editors/
     - title: Developer Console
       link: /resources/js/devtools/
+- title: JavaScript Fundamentals
+  key: JavaScript-Fundamentals
+  items:
+    - title: Hello, World!
+      link: /resources/js/hello-world/
+    - title: Code Structure
+      link: /resources/js/code-structure/
+    - title: The modern mode, "use strict"
+      link: /resources/js/strict-mode/
+    - title: Variables
+      link: /resources/js/variables/
+    - title: Data Types
+      link: /resources/js/data-types/
+    - title: Type Conversions
+      link: /resources/js/type-conversions/
