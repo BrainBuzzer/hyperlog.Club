@@ -50,7 +50,23 @@
   border-radius: 6px;
 }
 
+.markdown-section .warn-imp {
+  text-size-adjust: none;
+  color: #333;
+  line-height: 22px;
+  margin: 16px 0;
+  padding: 24px;
+  border: 3px solid #FFB200;
+  border-radius: 6px;
+}
+
 .markdown-section .info-imp .header-imp {
+  font-weight: 600;
+  display: block;
+  padding: 20px 0;
+}
+
+.markdown-section .warn-imp .header-imp {
   font-weight: 600;
   display: block;
   padding: 20px 0;
