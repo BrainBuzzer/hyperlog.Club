@@ -44,3 +44,15 @@
       link: /resources/js/function-arrows/
     - title: JavaScript specials
       link: /resources/js/specials/
+- title: Code Quality
+  key: Code-Quality
+  items:
+    - title: Debugging in Chrome
+      link: /resources/js/debug/
+    - title: Coding Style
+      link: /resources/js/coding-style/
+    - title: Comments
+      link: /resources/js/comments/
+    - title: Ninja Code
+      link: /resources/js/ninja/
+
