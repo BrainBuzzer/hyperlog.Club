@@ -24,3 +24,15 @@
       link: /resources/js/data-types/
     - title: Type Conversions
       link: /resources/js/type-conversions/
+    - title: Operators
+      link: /resources/js/operators/
+    - title: Comparisons
+      link: /resources/js/comparisons/
+    - title: Interaction - alert, prompt, confirm
+      link: /resources/js/interaction/
+    - title: Conditional operators; if, '?'
+      link: /resources/js/cond-operators/
+    - title: Logical Operators
+      link: /resources/js/logical-operators/
+    - title: Loops - whlie and for
+      link: /resources/js/loops/
