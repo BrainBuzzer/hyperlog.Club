@@ -1,3 +1,7 @@
+.markdown-section {
+  line-height: 1.6;
+}
+
 .markdown-section .result {
   line-height: 1.6;
   box-sizing: inherit;
@@ -35,4 +39,46 @@
   color: rgba(0,0,0,0.5);
   padding: 25px 30px;
 }
- 
+
+.markdown-section .info-imp {
+  text-size-adjust: none;
+  color: #333;
+  line-height: 22px;
+  margin: 16px 0;
+  padding: 24px;
+  border: 3px solid #f5f2f0;
+  border-radius: 6px;
+}
+
+.markdown-section .warn-imp {
+  text-size-adjust: none;
+  color: #333;
+  line-height: 22px;
+  margin: 16px 0;
+  padding: 24px;
+  border: 3px solid #FFB200;
+  border-radius: 6px;
+}
+
+.markdown-section .info-imp .header-imp {
+  font-weight: 600;
+  display: block;
+  padding: 20px 0;
+}
+
+.markdown-section .warn-imp .header-imp {
+  font-weight: 600;
+  display: block;
+  padding: 20px 0;
+}
+
+.markdown-section .info-imp .content{
+  line-height: 1.6;
+}
+
+span.devtools {
+  display: inline-block;
+  background-image: url(/article/debugging-chrome/toolbarButtonGlyphs.svg);
+  height: 16px;
+  width: 16px;
+}

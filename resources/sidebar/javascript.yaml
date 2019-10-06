@@ -1,5 +1,58 @@
-- title: Starting Up
-  key: Starting Up
+- title: An Introduction
+  key: An-Introduction
   items:
-    - title: Getting Started
-      link: /resources/js/getting-started/
+    - title: An Introduction to JavaScript
+      link: /resources/js/intro/
+    - title: Manuals and Specifications
+      link: /resources/js/manuals-specifications/
+    - title: Code Editors
+      link: /resources/js/code-editors/
+    - title: Developer Console
+      link: /resources/js/devtools/
+- title: JavaScript Fundamentals
+  key: JavaScript-Fundamentals
+  items:
+    - title: Hello, World!
+      link: /resources/js/hello-world/
+    - title: Code Structure
+      link: /resources/js/code-structure/
+    - title: The modern mode, "use strict"
+      link: /resources/js/strict-mode/
+    - title: Variables
+      link: /resources/js/variables/
+    - title: Data Types
+      link: /resources/js/data-types/
+    - title: Type Conversions
+      link: /resources/js/type-conversions/
+    - title: Operators
+      link: /resources/js/operators/
+    - title: Comparisons
+      link: /resources/js/comparisons/
+    - title: Interaction - alert, prompt, confirm
+      link: /resources/js/interaction/
+    - title: Conditional operators; if, '?'
+      link: /resources/js/cond-operators/
+    - title: Logical Operators
+      link: /resources/js/logical-operators/
+    - title: Loops - whlie and for
+      link: /resources/js/loops/
+    - title: The "switch" statement
+      link: /resources/js/switch/
+    - title: Functions
+      link: /resources/js/functions/
+    - title: Function expressions and arrows
+      link: /resources/js/function-arrows/
+    - title: JavaScript specials
+      link: /resources/js/specials/
+- title: Code Quality
+  key: Code-Quality
+  items:
+    - title: Debugging in Chrome
+      link: /resources/js/debug/
+    - title: Coding Style
+      link: /resources/js/coding-style/
+    - title: Comments
+      link: /resources/js/comments/
+    - title: Ninja Code
+      link: /resources/js/ninja/
+
