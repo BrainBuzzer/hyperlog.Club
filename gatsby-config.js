@@ -12,6 +12,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#3366FF`,
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
