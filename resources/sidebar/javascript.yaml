@@ -36,3 +36,11 @@
       link: /resources/js/logical-operators/
     - title: Loops - whlie and for
       link: /resources/js/loops/
+    - title: The "switch" statement
+      link: /resources/js/switch/
+    - title: Functions
+      link: /resources/js/functions/
+    - title: Function expressions and arrows
+      link: /resources/js/function-arrows/
+    - title: JavaScript specials
+      link: /resources/js/specials/
