@@ -39,15 +39,23 @@ const IndexPage = () => (
       <QNA>
         <h1 className="header-learn-more">Learn About hyperlog.Club</h1>
         <Question>
-          <h1>1. Who are we?</h1>
+          <h2>1. Who are we?</h2>
           <p>We are an open community for programmers from all levels of expertise who seek to learn to code and learn new technologies together.</p>
         </Question>
         <Question>
-          <h1>2. How can I join the community?</h1>
+          <h2>2. How can I join the community?</h2>
           <p>You can join the community by <Link to="/join">clicking here</Link>. We have a Discord server for which, an invite link will be sent to your email. You will only need a Github account to join the community.</p>
         </Question>
         <Question>
-          <h1>3. I want to contribute. How can I do it?</h1>
+          <h2>3. What do I get after joining the community?</h2>
+          <p>For now, you get the access to people who will be helpful in any new programming challenge you take on. We are working on a platform to allow peer-programming so stay tuned for that!</p>
+        </Question>
+        <Question>
+          <h2>4. Does it cost anything to join the community?</h2>
+          <p>This community is open for anyone for completely free.</p>
+        </Question>
+        <Question>
+          <h2>5. I want to contribute. How can I do it?</h2>
           <p>All of the code of hyperlog.Club is available for completely free of cost on Github. If you want to add any resources, or want to create any new tutorials, just follow the guideline on the Github Repositoy. We are actively looking for new contributors, so please feel free.</p>
         </Question>
       </QNA>
