@@ -48,6 +48,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `elixir_resources`,
+        path: `${__dirname}/resources/elixir`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `javascript_resources`,
         path: `${__dirname}/resources/javascript`,
       },
