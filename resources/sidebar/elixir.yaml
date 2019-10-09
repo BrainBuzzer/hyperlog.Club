@@ -1,0 +1,68 @@
+- title: Basic Elixir
+  key: Basic-Elixir
+  items:
+    - title: Basics
+      link: /resources/elixir/basics/
+    - title: Collections
+      link: /resources/elixir/collections/
+    - title: Enum
+      link: /resources/elixir/enum/
+    - title: Pattern Matching
+      link: /resources/elixir/pattern-matching/
+    - title: Control Structures
+      link: /resources/elixir/control-structures/
+    - title: Functions
+      link: /resources/elixir/functions/
+    - title: Pipe Operator
+      link: /resources/elixir/pipe-operator/
+    - title: Modules
+      link: /resources/elixir/modules/
+    - title: Mix
+      link: /resources/elixir/mix/
+    - title: Sigils
+      link: /resources/elixir/sigils/
+    - title: Documentation
+      link: /resources/elixir/documentation/
+    - title: Testing
+      link: /resources/elixir/testing/
+    - title: Comprehensions
+      link: /resources/elixir/comprehensions/
+    - title: Strings
+      link: /resources/elixir/strings/
+    - title: Date and Time
+      link: /resources/elixir/date-time/
+    - title: Custom Mix Tasks
+      link: /resources/elixir/mix-tasks/
+    - title: IEx Helpers
+      link: /resources/elixir/iex-helpers/
+- title: Advanced Elixir
+  key: Advanced-Elixir
+  items:
+    - title: Erlang Interoperability
+      link: /resources/elixir/erlang-interop/
+    - title: Error Handling
+      link: /resources/elixir/error-handling/
+    - title: Executables
+      link: /resources/elixir/executables/
+    - title: Concurrency
+      link: /resources/elixir/concurrency/
+    - title: OTP Concurrency
+      link: /resources/elixir/otp-concurrency/
+    - title: OTP Supervisors
+      link: /resources/elixir/otp-supervisors/
+    - title: OTP Distribution
+      link: /resources/elixir/otp-distribution/
+    - title: Metaprogramming
+      link: /resources/elixir/metaprogramming/
+    - title: Umbrella Projects
+      link: /resources/elixir/umbrella/
+    - title: Specifications and Types
+      link: /resources/elixir/specs-types/
+    - title: Behaviours
+      link: /resources/elixir/behaviours/
+    - title: GenStage
+      link: /resources/elixir/genstage/
+    - title: Protocols
+      link: /resources/elixir/protocols/
+    - title: Nerves
+      link: /resources/elixir/nerves/
