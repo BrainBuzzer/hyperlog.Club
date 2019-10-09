@@ -1,7 +1,5 @@
-@import url(https://rsms.me/inter/inter.css);
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
-
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Work+Sans&display=swap');
 
 body {
   font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +30,7 @@ pre[class*="language-"] {
   color: black;
   background: none;
   text-shadow: 0 1px white;
-  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: 'Inconsolata', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
