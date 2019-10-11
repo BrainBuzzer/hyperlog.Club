@@ -26,7 +26,7 @@ Before we move on, let's grasp some common terminology.
     ```
 - An operator is *binary* if it has two operands. The same minus exists in binary form as well:
 
-    ```js no-beautify
+    ```js
     let x = 1, y = 3;
     alert( y - x ); // 2, binary minus subtracts values
     ```
@@ -258,14 +258,14 @@ So, there are special operators for it:
 
 - **Increment** `++` increases a variable by 1:
 
-    ```js no-beautify
+    ```js
     let counter = 2;
     counter++;        // works the same as counter = counter + 1, but is shorter
     alert( counter ); // 3
     ```
 - **Decrement** `--` decreases a variable by 1:
 
-    ```js no-beautify
+    ```js
     let counter = 2;
     counter--;        // works the same as counter = counter - 1, but is shorter
     alert( counter ); // 1
@@ -435,11 +435,14 @@ alert( a ); // 7 (the result of 3 + 4)
 
 Here, the first expression `1 + 2` is evaluated and its result is thrown away. Then, `3 + 4` is evaluated and returned as the result.
 
-```smart header="Comma has a very low precedence"
+<div class="info-imp">
+<span class="header-imp">Comma has a very low precedence</span>
+<span class="content">
 Please note that the comma operator has very low precedence, lower than `=`, so parentheses are important in the example above.
 
 Without them: `a = 1 + 2, 3 + 4` evaluates `+` first, summing the numbers into `a = 3, 7`, then the assignment operator `=` assigns `a = 3`, and the rest is ignored. It's like `(a = 1 + 2), 3 + 4`.
-```
+</span>
+</div>
 
 Why do we need an operator that throws away everything except the last expression?
 
