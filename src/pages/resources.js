@@ -4,6 +4,7 @@ import Layout from "../components/shared/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
+import PropTypes from 'prop-types';
 import { navigate } from "gatsby"
 
 const BgImg = styled(Img)`
@@ -55,6 +56,10 @@ const IndexPage = ({ data }) => (
     </div>
   </Layout>
 )
+
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired
+}
 
 export default IndexPage
 
