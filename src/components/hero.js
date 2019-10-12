@@ -4,6 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { Icon } from "antd"
 import { isAuthenticated } from '../utils/auth'
+import './shared/layout.css'
 
 const ImageBackground = styled(BackgroundImage)`
   background-repeat: repeat;
