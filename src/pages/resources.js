@@ -1,6 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
+import Layout from "../components/shared/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
