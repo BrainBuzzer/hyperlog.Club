@@ -2,7 +2,7 @@
   "name": "hyperlog.club",
   "private": true,
   "description": "Client-side app for hyperlog.club",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Aditya Giri <dtrg21@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.17",

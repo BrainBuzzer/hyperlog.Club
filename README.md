@@ -3,8 +3,8 @@
 </h1>
 
 <div align="center">
-<img src="https://coveralls.io/repos/github/BrainBuzzer/hyperlog.Club/badge.svg?branch=master" alt="Coveralls Status" />
-<img src="https://circleci.com/gh/BrainBuzzer/hyperlog.Club.svg?style=svg" alt="CircleCI Status">
+[![CircleCI](https://circleci.com/gh/BrainBuzzer/hyperlog.Club.svg?style=svg)](https://circleci.com/gh/BrainBuzzer/hyperlog.Club)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/390ae289-3163-4ef3-b2c4-846152e63b72/deploy-status)](https://app.netlify.com/sites/laughing-tesla-7919a4/deploys)
 </div>
 
 A community for newcoming programmers to learn new programming languages and leverage the power of resources.
