@@ -18,7 +18,7 @@ const Message = styled.h1`
 `;
 
 const Callback = () => {
-  handleAuthentication(() => push('/account/dashboard'));
+  handleAuthentication(() => push('/dashboard'));
 
   return (
     <Container>
