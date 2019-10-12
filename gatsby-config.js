@@ -129,5 +129,6 @@ module.exports = {
         cookieDomain: `hyperlog.club`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
