@@ -116,5 +116,13 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-63818132-4`,
+        head: false,
+        cookieDomain: `hyperlog.club`,
+      },
+    },
   ],
 }
