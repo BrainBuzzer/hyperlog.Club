@@ -3,6 +3,7 @@ import HTMLCSSResources from '../../../resources/sidebar/htmlcss.yaml';
 import PythonResources from '../../../resources/sidebar/python.yaml';
 import JavascriptResources from '../../../resources/sidebar/javascript.yaml';
 import ElixirResources from '../../../resources/sidebar/elixir.yaml';
+import PropTypes from 'prop-types';
 import { Menu, Affix } from 'antd';
 import { Link } from 'gatsby';
 import { css } from "@emotion/core"
@@ -58,7 +59,7 @@ class Sidebar extends React.Component {
           >
             {this.state.Resources.map((resource, index) => (
               <Menu.ItemGroup key={index} title={resource.title}>
-                {resource.items.map((item, i) => (
+                {resource.items.map((item) => (
                   <Menu.Item key={item.link}>
                     <Link to={item.link}>{item.title}</Link>
                   </Menu.Item>
@@ -70,6 +71,11 @@ class Sidebar extends React.Component {
       </Affix>
     );
   }
+}
+
+Sidebar.propTypes = {
+  resource: PropTypes.object,
+  link: PropTypes.string
 }
 
 export default Sidebar

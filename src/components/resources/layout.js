@@ -4,6 +4,7 @@ import { Row, Col, Divider } from 'antd'
 import SEO from '../seo'
 import Header from '../shared/header'
 import css from '@emotion/css'
+import PropTypes from 'prop-types';
 
 const Layout = ({ children, link, title, resource }) => {
   return (
@@ -34,6 +35,13 @@ const Layout = ({ children, link, title, resource }) => {
       </Row>
     </>
   )
+}
+
+Layout.propTypes =  {
+  children: PropTypes.element.isRequired,
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  resource: PropTypes.object.isRequired
 }
 
 export default Layout
