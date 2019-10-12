@@ -8,6 +8,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `hyperlog.Club`,
+    siteUrl: `https://hyperlog.club`,
     description: `Learn to code with the community of newcomer and experienced programmers for completely free.`,
   },
   plugins: [
