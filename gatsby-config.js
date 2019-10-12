@@ -1,13 +1,9 @@
 const path = require(`path`)
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
-
 module.exports = {
   siteMetadata: {
     title: `hyperlog.Club`,
+    siteUrl: `https://hyperlog.club`,
     description: `Learn to code with the community of newcomer and experienced programmers for completely free.`,
   },
   plugins: [
@@ -121,5 +117,14 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-63818132-4`,
+        head: false,
+        cookieDomain: `hyperlog.club`,
+      },
+    },
+    `gatsby-plugin-sitemap`,
   ],
 }
