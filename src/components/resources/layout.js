@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from './sidebar'
 import { Row, Col, Divider } from 'antd'
 import SEO from '../seo'
-import Header from '../header'
+import Header from '../shared/header'
 import css from '@emotion/css'
 
 const Layout = ({ children, link, title, resource }) => {

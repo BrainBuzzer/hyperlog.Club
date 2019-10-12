@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Header from "../components/shared/header"
+import Footer from "../components/shared/footer"
 import Hero from "../components/hero"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
@@ -44,7 +44,7 @@ const IndexPage = () => (
         </Question>
         <Question>
           <h2>2. How can I join the community?</h2>
-          <p>You can join the community by <Link to="/join">clicking here</Link>. We have a Discord server for which, an invite link will be sent to your email. You will only need a Github account to join the community.</p>
+          <p>You can join the community by <Link to="/login">clicking here</Link>. We have a Discord server for which, an invite link will be sent to your email. You will only need a Github account to join the community.</p>
         </Question>
         <Question>
           <h2>3. What do I get after joining the community?</h2>
