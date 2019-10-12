@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import UserContext from '../../context/UserContext'
+import { Button } from 'antd';
 
 const Container = styled.div`
   display: flex;
@@ -15,9 +17,14 @@ class Dashboard extends React.Component {
   render() {
     return(
       <>
-        <Container>
-          <h1>🤫We're working on something amazing</h1>
-        </Container>
+        <UserContext.Consumer>
+          {({handleLogout}) => (
+            <Container>
+              <h1>🤫We&apos;re working on something amazing</h1>
+              <Button onClick={handleLogout}>Logout</Button>
+            </Container>
+          )}
+        </UserContext.Consumer>
       </>
     )
   }
