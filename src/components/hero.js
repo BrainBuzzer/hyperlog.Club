@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import { Icon } from "antd"
+import { isAuthenticated } from '../utils/auth'
 
 const ImageBackground = styled(BackgroundImage)`
   background-repeat: repeat;
@@ -61,6 +62,15 @@ const Button = styled(Link)`
   &.join-button {
     border: 3px solid #fff;
     font-weight: 600;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+    }
+    
   }
 
   &.resource-button {
@@ -115,9 +125,11 @@ const Hero = () => {
     <ImageBackground Tag="section" fluid={bgimage.childImageSharp.fluid}>
       <TextBox>
         <div className="header-logo">h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
-        <div className="hero-text"><p>We're an open community of newbie programmers who learn to code together.</p></div>
+        <div className="hero-text"><p>We&apos;re an open community of newbie programmers who learn to code together.</p></div>
         <div className="hero-buttons">
-          <Button className="join-button">Join Community <Icon type="arrow-right" /></Button>
+          {isAuthenticated && (
+            <Button className="join-button"><Link to="/login"><Icon type="github" /> Login with Github</Link></Button>
+          )}
           <Button className="resource-button">Learn More</Button>
         </div>
       </TextBox>

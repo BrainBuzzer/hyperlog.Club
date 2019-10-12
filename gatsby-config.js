@@ -1,5 +1,10 @@
 const path = require(`path`)
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
 module.exports = {
   siteMetadata: {
     title: `hyperlog.Club`,
@@ -104,5 +109,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-eslint`,
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: [`develop`],
+        options: {
+          emitWarning: true,
+          failOnError: false
+        }
+      }
+    },
   ],
 }

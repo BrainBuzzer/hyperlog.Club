@@ -126,7 +126,7 @@ There are two types of indents:
 
     For instance, we can align the arguments with the opening bracket, like this:
 
-    ```js no-beautify
+    ```js
     show(parameters,
          aligned, // 5 spaces padding at the left  
          one,
