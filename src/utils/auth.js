@@ -1,77 +1,114 @@
-import auth0 from "auth0-js"
-import { navigate } from 'gatsby'
+import auth0js from 'auth0-js';
 
-const isBrowser = typeof window !== "undefined"
+export const isBrowser = typeof window !== 'undefined';
 
-const auth = isBrowser
-  ? new auth0.WebAuth({
+// To speed things up, we’ll keep the profile stored unless the user logs out.
+// This prevents a flicker while the HTTP round-trip completes.
+let profile = false;
+
+// Only instantiate Auth0 if we’re in the browser.
+const auth0 = isBrowser
+  ? new auth0js.WebAuth({
       domain: process.env.AUTH0_DOMAIN,
       clientID: process.env.AUTH0_CLIENTID,
       redirectUri: process.env.AUTH0_CALLBACK,
-      responseType: "token id_token",
-      scope: "openid profile email",
+      responseType: 'token id_token',
+      scope: 'openid profile email'
     })
-  : {}
-
-const tokens = {
-  accessToken: false,
-  idToken: false,
-  expiresAt: false
-}
-
-let user = {}
-
-export const isAuthenticated = () => {
-  if(!isBrowser) {
-    return;
-  }
-
-  return localStorage.getItem("isLoggedIn") === String(true)
-}
+  : {};
 
 export const login = () => {
-  if(!isBrowser) {
+  if (!isBrowser) {
     return;
   }
 
-  auth.authorize()
-}
+  auth0.authorize();
+};
 
-const setSession = (cb = () => {}) => (err, authResult) => {
-  if(err) {
-    navigate("/")
-    cb()
-    return
+export const logout = callback => {
+  if (isBrowser) {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('id_token');
+    localStorage.removeItem('expires_at');
   }
 
-  if(authResult && authResult.accessToken && authResult.idToken) {
-    let expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
+  // Remove the locally cached profile to avoid confusing errors.
+  profile = false;
 
-    tokens.accessToken = authResult.accessToken
-    tokens.idToken = authResult.idToken
-    tokens.expiresAt = expiresAt
+  callback();
+};
 
-    user = authResult.idTokenPayload
-
-    localStorage.setItem("isLoggedIn", true)
-    navigate("/join")
-    cb()
-  }
-}
-
-export const handleAuthentication = () => {
-  if(!isBrowser) {
+const setSession = authResult => {
+  if (!isBrowser) {
     return;
   }
 
-  auth.parseHash(setSession())
-}
+  const expiresAt = JSON.stringify(
+    authResult.expiresIn * 1000 + new Date().getTime()
+  );
 
-export const getProfile = () => {
-  return user
-}
+  localStorage.setItem('access_token', authResult.accessToken);
+  localStorage.setItem('id_token', authResult.idToken);
+  localStorage.setItem('expires_at', expiresAt);
 
-export const logout = () => {
-  localStorage.setItem("isLoggedIn", false)
-  auth.logout()
-}
+  return true;
+};
+
+export const handleAuthentication = callback => {
+  if (!isBrowser) {
+    return;
+  }
+
+  auth0.parseHash((err, authResult) => {
+    if (authResult && authResult.accessToken && authResult.idToken) {
+      setSession(authResult);
+      callback();
+    } else if (err) {
+      console.error(err);
+    }
+  });
+};
+
+export const isAuthenticated = () => {
+  if (!isBrowser) {
+    // For SSR, we’re never authenticated.
+    return false;
+  }
+
+  let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
+  return new Date().getTime() < expiresAt;
+};
+
+export const getAccessToken = () => {
+  if (!isBrowser) {
+    return '';
+  }
+
+  return localStorage.getItem('access_token');
+};
+
+export const getUserInfo = () => {
+  return new Promise((resolve, reject) => {
+    // If the user has already logged in, don’t bother fetching again.
+    if (profile) {
+      resolve(profile);
+    }
+
+    const accessToken = getAccessToken();
+
+    if (!isAuthenticated()) {
+      resolve({});
+      return;
+    }
+
+    auth0.client.userInfo(accessToken, (err, userProfile) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      profile = userProfile;
+      resolve(profile);
+    });
+  });
+};
