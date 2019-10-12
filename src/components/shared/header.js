@@ -3,7 +3,6 @@ import React from "react"
 import { Row, Col, Affix, Menu, Button, Icon } from "antd"
 import { Location } from "@reach/router"
 import UserContext from '../../context/UserContext'
-import { isAuthenticated } from '../../utils/auth'
 
 const Header = () => (
   <Affix offsetTop={0}>

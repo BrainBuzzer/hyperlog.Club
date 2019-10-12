@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/resources/layout'
+import PropTypes from 'prop-types'
 import "./post-style.css"
 
 const PostResource = ({ data }) => {
@@ -12,6 +13,10 @@ const PostResource = ({ data }) => {
       </Layout>
     </>
   )
+}
+
+PostResource.propTypes = {
+  data: PropTypes.object.isRequired
 }
 
 export default PostResource
