@@ -64,23 +64,16 @@ const Button = styled(Link)`
     border: 3px solid #fff;
     font-weight: 600;
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      &:hover {
-        color: #000;
-      }
-    }
+    color: #fff;
     
+    &:hover {
+      color: #000;
+    }    
   }
 
   &.resource-button {
     border: 1px solid #fff;
     font-weight: 400;
-
-    &:hover {
-      font-weight: 600;
-    }
   }
 
   &::after {
@@ -129,7 +122,7 @@ const Hero = () => {
         <div className="hero-text"><p>We&apos;re an open community of newbie programmers who learn to code together.</p></div>
         <div className="hero-buttons">
           {isAuthenticated && (
-            <Button className="join-button"><Link to="/login"><Icon type="github" /> Login with Github</Link></Button>
+            <Button className="join-button" to="/login"><Icon type="github" /> Login with Github</Button>
           )}
           <Button className="resource-button">Learn More</Button>
         </div>
