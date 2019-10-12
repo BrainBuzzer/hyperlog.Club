@@ -19,9 +19,9 @@ const Header = () => (
                   <Menu mode="horizontal" style={{ borderBottom: `none`}} selectedKeys={[key]}>
                     <Menu.Item key="/"><Link to="/">Home</Link></Menu.Item>
                     <Menu.Item key="/resources"><Link to="/resources">Resources</Link></Menu.Item>
-                    <Menu.Item key="/join" className="join-menu" disabled style={{ cursor: `default` }}>
+                    <Menu.Item key="/login" className="join-menu" disabled style={{ cursor: `default` }}>
                       <Button type="primary" shape="round" size="default">
-                        <Link to="/join">Join Community</Link>
+                        <Link to="/login">Login with Github</Link>
                       </Button>
                     </Menu.Item>
                   </Menu>
