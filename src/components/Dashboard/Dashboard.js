@@ -21,7 +21,7 @@ class Dashboard extends React.Component {
           {({handleLogout}) => (
             <Container>
               <h1>🤫We&apos;re working on something amazing</h1>
-              <p>Why don't you check your mail in the meanwhile? We've sent something to you 😉</p>
+              <p>Why don&apos;t you check your mail in the meanwhile? We&apos;ve sent something to you 😉</p>
               <Button onClick={handleLogout}>Logout</Button>
             </Container>
           )}
