@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "@emotion/styled"
 import BackgroundImage from "gatsby-background-image"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import { Icon } from "antd"
-import { isAuthenticated } from '../utils/auth'
+import { graphql, useStaticQuery } from "gatsby"
 import './shared/layout.css'
+import { FaDiscord } from 'react-icons/fa'
+
 
 const ImageBackground = styled(BackgroundImage)`
-  background-repeat: repeat;
-  background-size: inherit;
+  background-repeat: none;
+  background-size: cover;
   height: 500px;
   z-index: 999;
 `
@@ -48,7 +48,7 @@ const TextBox = styled('div')`
   }
 `
 
-const Button = styled(Link)`
+const Button = styled('a')`
   border-radius: 5px;
   color: #fff;
   display: block;
@@ -67,7 +67,9 @@ const Button = styled(Link)`
     color: #fff;
     
     &:hover {
-      color: #000;
+      background-color: #7289DA;
+      color: #fff;
+      border: 3px solid #7289DA;
     }    
   }
 
@@ -105,7 +107,7 @@ const Button = styled(Link)`
 const Hero = () => {
   const { bgimage } = useStaticQuery(graphql`
   query {
-    bgimage: file(relativePath:{eq: "hero-bg.png"}){
+    bgimage: file(relativePath:{eq: "hero-bg.jpg"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
@@ -121,9 +123,7 @@ const Hero = () => {
         <div className="header-logo">h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
         <div className="hero-text"><p>We&apos;re an open community of newbie programmers who learn to code together.</p></div>
         <div className="hero-buttons">
-          {isAuthenticated && (
-            <Button className="join-button" to="/login"><Icon type="github" /> Login with Github</Button>
-          )}
+          <Button className="join-button" href="https://discord.gg/XkWxzxm"><FaDiscord /> Join Discord</Button>
           <Button className="resource-button">Learn More</Button>
         </div>
       </TextBox>
