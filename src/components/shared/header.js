@@ -1,8 +1,14 @@
 import { Link, navigate } from "gatsby"
 import React from "react"
-import { Row, Col, Affix, Menu, Button, Icon } from "antd"
+import { Row, Col, Affix, Menu, Button, } from "antd"
+import { FaDiscord } from 'react-icons/fa'
 import { Location } from "@reach/router"
-import UserContext from '../../context/UserContext'
+import styled from '@emotion/styled'
+
+const JoinButton = styled(Button)`
+  background-color: #7289DA;
+  color: #fff;
+`
 
 const Header = () => (
   <Affix offsetTop={0}>
@@ -21,7 +27,7 @@ const Header = () => (
                       <Menu.Item key="/"><Link to="/">Home</Link></Menu.Item>
                       <Menu.Item key="/resources"><Link to="/resources">Resources</Link></Menu.Item>
                       <Menu.Item key="/stat" className="join-menu" disabled style={{ cursor: `default` }}>
-                          <UserContext.Consumer>
+                          {/* <UserContext.Consumer>
                             {({handleLogout, profile}) => (
                               (profile.name ? (
                                 <Button type="ghost" shape="round" size="default" onClick={handleLogout}>
@@ -33,7 +39,10 @@ const Header = () => (
                                 </Button>
                               ))
                             )}
-                          </UserContext.Consumer>
+                          </UserContext.Consumer> */}
+                          <JoinButton shape="round" size="default">
+                            <a href="https://discord.gg/XkWxzxm"><FaDiscord /> Join Discord Server</a>
+                          </JoinButton>
                       </Menu.Item>
                     </Menu>
                 )
