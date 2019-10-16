@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from './sidebar'
-import { Row, Col, Divider } from 'antd'
+import { Row, Col, Divider, BackTop } from 'antd'
 import SEO from '../seo'
 import Header from '../shared/header'
 import css from '@emotion/css'
@@ -23,6 +23,10 @@ const Layout = ({ children, link, title, resource }) => {
               padding: 0 170px 144px 64px;
               overflow: hidden;
               background: #fff;
+
+              @media (max-width: 767px) {
+                padding: 0 20px 144px 20px;
+              }
             `}>
               <article className="markdown-section" id="main">
                 <h1>{title}</h1>
@@ -33,6 +37,7 @@ const Layout = ({ children, link, title, resource }) => {
           </main>
         </Col>
       </Row>
+      <BackTop />
     </>
   )
 }
