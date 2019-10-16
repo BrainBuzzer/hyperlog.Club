@@ -193,10 +193,11 @@ main {
 .header-logo {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-left: 20px;
   cursor: pointer;
   color: #000;
+  margin-top: 5px;
 }
 
 .header-logo-letter-y {
