@@ -14,10 +14,10 @@ const Header = () => (
   <Affix offsetTop={0}>
     <header className="header">
       <Row>
-        <Col span={6}>
+        <Col md={6} xs={24}>
           <div className="header-logo" onClick={() => { navigate("/") }}>h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
         </Col>
-        <Col span={18}>
+        <Col md={18} xs={24}>
           <div style={{float: "right", marginRight: `1rem`}}>
             <Location>
               {({ location }) => {
