@@ -38,8 +38,8 @@ const NextButton = ({ link, title }) => {
 
 
 NextButton.propTypes = {
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  link: PropTypes.string,
+  title: PropTypes.string
 }
 
 const PrevButton = ({ link, title }) => {
@@ -51,8 +51,8 @@ const PrevButton = ({ link, title }) => {
 }
 
 PrevButton.propTypes = {
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  link: PropTypes.string,
+  title: PropTypes.string
 }
 
 class NextPrev extends React.Component {
@@ -104,7 +104,11 @@ class NextPrev extends React.Component {
   
           // Check if the next item exists, if it doesn't, set the first item of next chapter as next.
           if(a.items[i+1] === undefined) {
-            this.setState({next: this.state.Resources[arrIndex+1].items[0]})
+            if(this.state.Resources[arrIndex+1].items[0] === undefined) {
+              this.setState({next: {}})
+            } else {
+              this.setState({next: this.state.Resources[arrIndex+1].items[0]})
+            }
           } else {
             // If the next item exists, set the next link to that item
             this.setState({next: a.items[i+1]})
@@ -117,14 +121,13 @@ class NextPrev extends React.Component {
   render() {
     return (
       <>
-        <Row gutter={[48, 16]}>
+        <Row gutter={[24, 24]}>
           <Col sm={24} md={12}>
-            {(this.state.prev != undefined) && (
+            {(this.state.prev.length != 0) && (
               <PrevButton link={this.state.prev.link} title={this.state.prev.title} />
             )}
           </Col>
           <Col sm={24} md={12}>
-            {}
             <NextButton link={this.state.next.link} title={this.state.next.title} />
           </Col>
         </Row>
