@@ -4,8 +4,56 @@ import PythonResources from '../../../resources/sidebar/python.yaml';
 import JavascriptResources from '../../../resources/sidebar/javascript.yaml';
 import ElixirResources from '../../../resources/sidebar/elixir.yaml';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-// import { css } from "@emotion/core"
+import { navigate } from 'gatsby';
+import { Row, Col } from 'antd'
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import styled from '@emotion/styled';
+
+const Card = styled('div')`
+  height: 100px;
+  display: flex;
+  width: 100%;
+  padding: 45px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  cursor: pointer;
+
+  &:hover {
+    color: #3366ff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+`
+
+const NextButton = ({ link, title }) => {
+  return (
+    <>
+      <Card onClick={() => navigate(link)}>{title}&nbsp;&nbsp;<FaArrowRight /></Card>
+    </>
+  )
+}
+
+
+NextButton.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+}
+
+const PrevButton = ({ link, title }) => {
+  return (
+    <>
+      <Card onClick={() => navigate(link)}><FaArrowLeft />&nbsp;&nbsp;{title}</Card>
+    </>
+  )
+}
+
+PrevButton.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+}
 
 class NextPrev extends React.Component {
   constructor() {
@@ -69,8 +117,17 @@ class NextPrev extends React.Component {
   render() {
     return (
       <>
-        <Link to={this.state.prev.link}>{this.state.prev.title}</Link>
-        <Link to={this.state.next.link}>{this.state.next.title}</Link>
+        <Row gutter={[48, 16]}>
+          <Col sm={24} md={12}>
+            {(this.state.prev != undefined) && (
+              <PrevButton link={this.state.prev.link} title={this.state.prev.title} />
+            )}
+          </Col>
+          <Col sm={24} md={12}>
+            {}
+            <NextButton link={this.state.next.link} title={this.state.next.title} />
+          </Col>
+        </Row>
       </>
     );
   }
