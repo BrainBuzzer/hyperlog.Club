@@ -1,6 +1,6 @@
 ---
 title: Function expressions and arrows
-slug: js/function-arrows
+slug: javascript/function-arrows
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

@@ -1,6 +1,6 @@
 ---
 title: Comments
-slug: js/comments
+slug: javascript/comments
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

@@ -1,6 +1,6 @@
 ---
 title: Ninja Code
-slug: js/ninja
+slug: javascript/ninja
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

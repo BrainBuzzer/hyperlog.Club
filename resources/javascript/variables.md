@@ -1,6 +1,6 @@
 ---
 title: Variables
-slug: js/variables
+slug: javascript/variables
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

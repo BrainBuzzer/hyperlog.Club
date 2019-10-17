@@ -1,6 +1,6 @@
 ---
 title: The modern mode, "use strict"
-slug: js/strict-mode
+slug: javascript/strict-mode
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

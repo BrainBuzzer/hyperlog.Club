@@ -1,6 +1,6 @@
 ---
 title: Developer Console
-slug: js/devtools
+slug: javascript/devtools
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

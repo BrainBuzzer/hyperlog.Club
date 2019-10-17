@@ -1,6 +1,6 @@
 ---
 title: Code Editors
-slug: js/code-editors
+slug: javascript/code-editors
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

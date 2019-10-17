@@ -2,57 +2,57 @@
   key: An-Introduction
   items:
     - title: An Introduction to JavaScript
-      link: /resources/js/intro/
+      link: /resources/javascript/intro/
     - title: Manuals and Specifications
-      link: /resources/js/manuals-specifications/
+      link: /resources/javascript/manuals-specifications/
     - title: Code Editors
-      link: /resources/js/code-editors/
+      link: /resources/javascript/code-editors/
     - title: Developer Console
-      link: /resources/js/devtools/
+      link: /resources/javascript/devtools/
 - title: JavaScript Fundamentals
   key: JavaScript-Fundamentals
   items:
     - title: Hello, World!
-      link: /resources/js/hello-world/
+      link: /resources/javascript/hello-world/
     - title: Code Structure
-      link: /resources/js/code-structure/
+      link: /resources/javascript/code-structure/
     - title: The modern mode, "use strict"
-      link: /resources/js/strict-mode/
+      link: /resources/javascript/strict-mode/
     - title: Variables
-      link: /resources/js/variables/
+      link: /resources/javascript/variables/
     - title: Data Types
-      link: /resources/js/data-types/
+      link: /resources/javascript/data-types/
     - title: Type Conversions
-      link: /resources/js/type-conversions/
+      link: /resources/javascript/type-conversions/
     - title: Operators
-      link: /resources/js/operators/
+      link: /resources/javascript/operators/
     - title: Comparisons
-      link: /resources/js/comparisons/
+      link: /resources/javascript/comparisons/
     - title: Interaction - alert, prompt, confirm
-      link: /resources/js/interaction/
+      link: /resources/javascript/interaction/
     - title: Conditional operators; if, '?'
-      link: /resources/js/cond-operators/
+      link: /resources/javascript/cond-operators/
     - title: Logical Operators
-      link: /resources/js/logical-operators/
+      link: /resources/javascript/logical-operators/
     - title: Loops - whlie and for
-      link: /resources/js/loops/
+      link: /resources/javascript/loops/
     - title: The "switch" statement
-      link: /resources/js/switch/
+      link: /resources/javascript/switch/
     - title: Functions
-      link: /resources/js/functions/
+      link: /resources/javascript/functions/
     - title: Function expressions and arrows
-      link: /resources/js/function-arrows/
+      link: /resources/javascript/function-arrows/
     - title: JavaScript specials
-      link: /resources/js/specials/
+      link: /resources/javascript/specials/
 - title: Code Quality
   key: Code-Quality
   items:
     - title: Debugging in Chrome
-      link: /resources/js/debug/
+      link: /resources/javascript/debug/
     - title: Coding Style
-      link: /resources/js/coding-style/
+      link: /resources/javascript/coding-style/
     - title: Comments
-      link: /resources/js/comments/
+      link: /resources/javascript/comments/
     - title: Ninja Code
-      link: /resources/js/ninja/
+      link: /resources/javascript/ninja/
 
