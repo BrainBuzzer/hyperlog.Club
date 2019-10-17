@@ -5,8 +5,9 @@ import SEO from '../seo'
 import Header from '../shared/header'
 import css from '@emotion/css'
 import PropTypes from 'prop-types';
+import { FiEdit } from 'react-icons/fi'
 
-const Layout = ({ children, link, title, resource }) => {
+const Layout = ({ children, link, title, slug, resource }) => {
   return (
     <>
       <SEO title={title} />
@@ -32,6 +33,8 @@ const Layout = ({ children, link, title, resource }) => {
                 <h1>{title}</h1>
                 <Divider />
                 <div dangerouslySetInnerHTML={{ __html: children}} />
+                <Divider />
+                <a href={`https://github.com/BrainBuzzer/hyperlog.Club/edit/master/resources/${slug}.md`}><FiEdit /> Edit this page</a>
               </article>
             </section>
           </main>
@@ -46,7 +49,8 @@ Layout.propTypes =  {
   children: PropTypes.element.isRequired,
   link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  resource: PropTypes.object.isRequired
+  resource: PropTypes.object.isRequired,
+  slug: PropTypes.string.isRequired
 }
 
 export default Layout
