@@ -19,7 +19,7 @@ const Card = styled('div')`
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   align-items: center;
   justify-content: center;
-  color: #888;
+  color: #555;
   cursor: pointer;
 
   &:hover {
