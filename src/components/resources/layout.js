@@ -6,6 +6,7 @@ import Header from '../shared/header'
 import css from '@emotion/css'
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi'
+import NextPrev from './next-prev'
 
 const Layout = ({ children, frontmatter }) => {
   return (
@@ -35,6 +36,8 @@ const Layout = ({ children, frontmatter }) => {
                 <div dangerouslySetInnerHTML={{ __html: children}} />
                 <Divider />
                 <a href={`https://github.com/BrainBuzzer/hyperlog.Club/edit/master/resources/${frontmatter.slug}.md`}><FiEdit /> Edit this page</a>
+                <Divider />
+                <NextPrev link={`/resources/${frontmatter.slug}/`} resource={frontmatter.resource} />
               </article>
             </section>
           </main>
@@ -46,7 +49,7 @@ const Layout = ({ children, frontmatter }) => {
 }
 
 Layout.propTypes =  {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string.isRequired,
   frontmatter: PropTypes.object.isRequired
 }
 
