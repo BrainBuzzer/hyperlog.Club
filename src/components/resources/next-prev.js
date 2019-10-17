@@ -104,7 +104,7 @@ class NextPrev extends React.Component {
   
           // Check if the next item exists, if it doesn't, set the first item of next chapter as next.
           if(a.items[i+1] === undefined) {
-            if(this.state.Resources[arrIndex+1].items[0] === undefined) {
+            if(this.state.Resources[arrIndex+1] === undefined) {
               this.setState({next: {}})
             } else {
               this.setState({next: this.state.Resources[arrIndex+1].items[0]})
@@ -123,12 +123,14 @@ class NextPrev extends React.Component {
       <>
         <Row gutter={[24, 24]}>
           <Col sm={24} md={12}>
-            {(this.state.prev.length != 0) && (
+            {(Object.keys(this.state.prev).length !== 0) && (
               <PrevButton link={this.state.prev.link} title={this.state.prev.title} />
             )}
           </Col>
           <Col sm={24} md={12}>
-            <NextButton link={this.state.next.link} title={this.state.next.title} />
+            {(Object.keys(this.state.next).length !== 0) && (
+              <NextButton link={this.state.next.link} title={this.state.next.title} />
+            )}
           </Col>
         </Row>
       </>
