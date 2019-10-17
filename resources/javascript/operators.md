@@ -1,6 +1,6 @@
 ---
 title: Operators
-slug: js/operators
+slug: javascript/operators
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

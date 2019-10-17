@@ -1,6 +1,6 @@
 ---
 title: Manuals and Specifications
-slug: js/manuals-specifications
+slug: javascript/manuals-specifications
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

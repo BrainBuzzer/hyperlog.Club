@@ -1,6 +1,6 @@
 ---
 title: Debugging in Chrome
-slug: js/debug
+slug: javascript/debug
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

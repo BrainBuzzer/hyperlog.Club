@@ -1,6 +1,6 @@
 ---
 title: Loops - while and for
-slug: js/loops
+slug: javascript/loops
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

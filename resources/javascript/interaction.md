@@ -1,6 +1,6 @@
 ---
 title: Interaction - alert, prompt, confirm
-slug: js/interaction
+slug: javascript/interaction
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

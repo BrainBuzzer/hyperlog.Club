@@ -1,6 +1,6 @@
 ---
 title: JavaScript specials
-slug: js/specials
+slug: javascript/specials
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---
