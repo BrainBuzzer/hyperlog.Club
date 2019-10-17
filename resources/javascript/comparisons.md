@@ -1,6 +1,6 @@
 ---
 title: Comparisons
-slug: js/comparisons
+slug: javascript/comparisons
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

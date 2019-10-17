@@ -1,6 +1,6 @@
 ---
 title: Data Types
-slug: js/data-types
+slug: javascript/data-types
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

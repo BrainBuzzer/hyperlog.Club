@@ -1,6 +1,6 @@
 ---
 title: Code Structure
-slug: js/code-structure
+slug: javascript/code-structure
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

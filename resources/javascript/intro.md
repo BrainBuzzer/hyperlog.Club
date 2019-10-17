@@ -1,6 +1,6 @@
 ---
 title: An Introduction to JavaScript
-slug: js/intro
+slug: javascript/intro
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

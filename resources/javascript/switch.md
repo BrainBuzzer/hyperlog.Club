@@ -1,6 +1,6 @@
 ---
 title: The "switch" statement
-slug: js/switch
+slug: javascript/switch
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

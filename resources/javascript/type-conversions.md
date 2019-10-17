@@ -1,6 +1,6 @@
 ---
 title: Type Conversions
-slug: js/type-conversions
+slug: javascript/type-conversions
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---
