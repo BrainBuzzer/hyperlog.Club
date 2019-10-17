@@ -3,8 +3,12 @@
 </h1>
 
 <div align="center">
-[![CircleCI](https://circleci.com/gh/BrainBuzzer/hyperlog.Club.svg?style=svg)](https://circleci.com/gh/BrainBuzzer/hyperlog.Club)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/390ae289-3163-4ef3-b2c4-846152e63b72/deploy-status)](https://app.netlify.com/sites/laughing-tesla-7919a4/deploys)
+  <a href="https://circleci.com/gh/BrainBuzzer/hyperlog.Club">
+    <img src="https://circleci.com/gh/BrainBuzzer/hyperlog.Club.svg?style=svg" alt="CircleCI" />
+  </a>
+  <a href="https://app.netlify.com/sites/laughing-tesla-7919a4/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/390ae289-3163-4ef3-b2c4-846152e63b72/deploy-status" alt="Netlify Status" />
+  </a>
 </div>
 
 A community for newcoming programmers to learn new programming languages and leverage the power of resources.
