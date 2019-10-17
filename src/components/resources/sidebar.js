@@ -66,8 +66,8 @@ class Sidebar extends React.Component {
 }
 
 Sidebar.propTypes = {
-  resource: PropTypes.object,
-  link: PropTypes.string
+  resource: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 }
 
 export default Sidebar
