@@ -38,7 +38,6 @@ class Sidebar extends React.Component {
         <section css={css`
           overflow-x: hidden;
           overflow-y: hidden;
-          max-height: 100vh;
         `}>
           <Menu
             css={css`
