@@ -5,6 +5,7 @@ import { FaDiscord } from 'react-icons/fa'
 import { Location } from "@reach/router"
 import styled from '@emotion/styled'
 import DarkModeToggle from "./dark-mode-toggle"
+import ThemeContext from "../../context/ThemeContext"
 
 const JoinButton = styled(Button)`
   background-color: #7289DA;
@@ -24,7 +25,9 @@ const Header = () => (
               {({ location }) => {
                 let key = location.pathname.includes('/resources') ? "/resources" : location.pathname
                 return (
-                    <Menu mode="horizontal" style={{ borderBottom: `none`}} selectedKeys={[key]}>
+                  <ThemeContext.Consumer>
+                    {theme => (
+                    <Menu mode="horizontal" theme={theme.dark ? 'dark' : 'light'} style={{ borderBottom: `none`}} selectedKeys={[key]}>
                       <Menu.Item key="/"><Link to="/">Home</Link></Menu.Item>
                       <Menu.Item key="/resources"><Link to="/resources">Resources</Link></Menu.Item>
                       <Menu.Item key="/stat" className="join-menu" disabled style={{ cursor: `default` }}>
@@ -46,6 +49,8 @@ const Header = () => (
                           </JoinButton>
                       </Menu.Item>
                     </Menu>
+                    )}
+                  </ThemeContext.Consumer>
                 )
               }}
             </Location>
