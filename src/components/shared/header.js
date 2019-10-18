@@ -30,6 +30,7 @@ const Header = () => (
                     <Menu mode="horizontal" theme={theme.dark ? 'dark' : 'light'} style={{ borderBottom: `none`}} selectedKeys={[key]}>
                       <Menu.Item key="/"><Link to="/">Home</Link></Menu.Item>
                       <Menu.Item key="/resources"><Link to="/resources">Resources</Link></Menu.Item>
+                      <Menu.Item key="/blog"><a href="https://blog.hyperlog.club">Blog</Link></Menu.Item>
                       <Menu.Item key="/stat" className="join-menu" disabled style={{ cursor: `default` }}>
                           {/* <UserContext.Consumer>
                             {({handleLogout, profile}) => (
