@@ -44,7 +44,7 @@
   height: 17px;
   left: 5px;
   top: 0px;
-  color: #ffff00;
+  color: #ffffff;
   bottom: 0px;
   margin-top: auto;
   margin-bottom: auto;
@@ -65,7 +65,7 @@
   right: 5px;
   top: 0px;
   bottom: 0px;
-  color: #fff;
+  color: #ffff00;
   margin-top: auto;
   margin-bottom: auto;
   line-height: 0;
@@ -96,9 +96,9 @@
 }
 
 .react-toggle--focus .react-toggle-thumb {
-  box-shadow: 0px 0px 2px 3px rgb(255, 167, 196);
+  box-shadow: 0px 0px 2px 3px rgb(51, 102, 255);
 }
 
 .react-toggle:active .react-toggle-thumb {
-  box-shadow: 0px 0px 5px 5px rgb(255, 167, 196);
+  box-shadow: 0px 0px 5px 5px rgb(51, 102, 255);
 }

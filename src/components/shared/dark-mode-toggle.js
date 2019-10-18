@@ -17,7 +17,7 @@ const DarkModeToggle = () => {
           checked: <FaSun />,
           unchecked: <FaMoon />
         }}
-        defaultChecked={true} />
+        defaultChecked={darkMode.value} />
     </div>
   )
 }
