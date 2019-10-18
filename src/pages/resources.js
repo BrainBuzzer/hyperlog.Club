@@ -21,10 +21,18 @@ const BgImg = styled(Img)`
   }
 `
 
+const Header = styled('h1')`
+  color: #000;
+
+  .dark-mode & {
+    color: #fff;
+  }
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Resources to learn programming" />
-    <h1>Learn Programming Languages</h1>
+    <Header>Learn Programming Languages</Header>
     <div className="cards-list">
       <div className="card" onClick={() => { navigate("/resources/htmlcss/the-internet/") }}>
         <div className="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
@@ -47,12 +55,12 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
 
-      <div className="card" onClick={() => { navigate("/resources/python/set-up-dev/") }}>
+      {/* <div className="card" onClick={() => { navigate("/resources/python/set-up-dev/") }}>
         <div className="card_image"><BgImg fluid={data.htmlcss.childImageSharp.fluid} /></div>
         <div className="card_title title-white">
           <p>Python</p>
         </div>
-      </div>
+      </div> */}
     </div>
   </Layout>
 )

@@ -15,18 +15,28 @@ const QNA = styled('div')`
   .header-learn-more {
     text-align: center;
     font-weight: 600;
+
+    .dark-mode & {
+      color: #eee;
+    }
   }
 `
 
 const Question = styled('div')`
   margin-top: 50px;
 
-  h1 {
-    font-weight: 600;
+  h2 {
+    .dark-mode & {
+      color: #eee;
+    }
   }
 
   p {
     font-size: 1rem;
+
+    .dark-mode & {
+      color: #e5e5e5;
+    }
   }
 `
 
