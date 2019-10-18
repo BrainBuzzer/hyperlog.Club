@@ -26,6 +26,7 @@ const Question = styled('div')`
   margin-top: 50px;
 
   h2 {
+    color: #222;
     .dark-mode & {
       color: #eee;
     }
