@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `hyperlog.Club`,
     siteUrl: `https://hyperlog.club`,
-    description: `Learn to code with the community of newcomer and experienced programmers for completely free.`,
+    description: `Learn to code using the peer-learning with community of newcomer and experienced programmers for completely free of cost.`,
+    image: `https://i.imgur.com/m8HNkVy.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -39,7 +39,7 @@ const Layout = ({ children, frontmatter }) => {
                 <Divider />
                 <div dangerouslySetInnerHTML={{ __html: children}} />
                 <Divider />
-                <a href={`https://github.com/BrainBuzzer/hyperlog.Club/edit/master/resources/${frontmatter.slug}.md`} css={css`color: #999; &:hover { color: #222; }`}><FiEdit /> Edit this page</a>
+                <a href={`https://github.com/BrainBuzzer/hyperlog.Club/edit/master/resources/${frontmatter.slug}.md`} css={css`color: #999; &:hover { color: #222; .dark-mode & { color: #eee; } }`}><FiEdit /> Edit this page</a>
                 <Divider />
                 <NextPrev link={`/resources/${frontmatter.slug}/`} resource={frontmatter.resource} />
               </article>
