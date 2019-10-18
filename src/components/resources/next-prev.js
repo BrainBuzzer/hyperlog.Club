@@ -26,6 +26,17 @@ const Card = styled('div')`
     color: #3366ff;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
+
+  .dark-mode & {
+    background-color: #000;
+    color: #999;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.1);
+
+    :hover {
+      color: #fff;
+      box-shadow: 0 14px 28px rgba(255,255,255,0.25), 0 10px 10px rgba(255,255,255,0.22);
+    }
+  }
 `
 
 const NextButton = ({ link, title }) => {
