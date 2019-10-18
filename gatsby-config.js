@@ -5,7 +5,7 @@ module.exports = {
     title: `hyperlog.Club`,
     siteUrl: `https://hyperlog.club`,
     description: `Learn to code using the peer-learning with community of newcomer and experienced programmers for completely free of cost.`,
-    image: `/images/seo-image.png`
+    image: `https://i.imgur.com/m8HNkVy.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

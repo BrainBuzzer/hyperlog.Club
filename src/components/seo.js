@@ -57,12 +57,16 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.image
         },
         {
+          property: `og:image:secure_url`,
+          content: site.siteMetadata.image
+        },
+        {
           property: `og:image:width`,
-          content: `560`
+          content: `1120`
         },
         {
           property: `og:image:height`,
-          content: `315`
+          content: `630`
         },
         {
           property: `og:url`,
@@ -81,7 +85,15 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name: `twitter:image`,
+          name: `twitter:image:width`,
+          content: `1120`
+        },
+        {
+          name: `twitter:image:height`,
+          content: `630`
+        },
+        {
+          name: `twitter:image:src`,
           content: site.siteMetadata.image
         }
       ].concat(meta)}
