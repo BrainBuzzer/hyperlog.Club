@@ -4,6 +4,7 @@ import { Row, Col, Affix, Menu, Button, } from "antd"
 import { FaDiscord } from 'react-icons/fa'
 import { Location } from "@reach/router"
 import styled from '@emotion/styled'
+import DarkModeToggle from "./dark-mode-toggle"
 
 const JoinButton = styled(Button)`
   background-color: #7289DA;
@@ -17,7 +18,7 @@ const Header = () => (
         <Col md={6} xs={24}>
           <div className="header-logo" onClick={() => { navigate("/") }}>h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
         </Col>
-        <Col md={18} xs={24}>
+        <Col md={16} xs={24}>
           <div style={{float: "right", marginRight: `1rem`}}>
             <Location>
               {({ location }) => {
@@ -49,6 +50,9 @@ const Header = () => (
               }}
             </Location>
           </div>
+        </Col>
+        <Col md={2} xs={24}>
+          <DarkModeToggle />
         </Col>
       </Row>
     </header>
