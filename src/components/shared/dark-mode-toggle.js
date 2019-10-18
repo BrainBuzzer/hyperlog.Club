@@ -14,8 +14,8 @@ const DarkModeToggle = () => {
       <Toggle
         onChange={handleTheme}
         icons={{
-          checked: <FaSun />,
-          unchecked: <FaMoon />
+          checked: <FaMoon />,
+          unchecked: <FaSun />
         }}
         defaultChecked={darkMode.value} />
     </div>
