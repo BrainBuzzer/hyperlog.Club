@@ -1,6 +1,6 @@
 ---
 title: Coding Style
-slug: js/coding-style
+slug: javascript/coding-style
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

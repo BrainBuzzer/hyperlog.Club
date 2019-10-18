@@ -1,6 +1,6 @@
 ---
 title: Conditional Operators; if, '?'
-slug: js/cond-operators
+slug: javascript/cond-operators
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

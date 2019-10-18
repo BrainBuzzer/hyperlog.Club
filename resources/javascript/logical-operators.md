@@ -1,6 +1,6 @@
 ---
 title: Logical Operators
-slug: js/logical-operators
+slug: javascript/logical-operators
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

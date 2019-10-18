@@ -22,7 +22,7 @@ const TextBox = styled('div')`
   padding: 0 calc((100vw-550px)/2) 2rem;
   width: 100%;
 
-  .header-logo {
+  .hero-logo {
     padding: 2px;
     background: rgba(255,255,255,.9);
     font-size: 2.25rem;
@@ -120,7 +120,7 @@ const Hero = () => {
   return (
     <ImageBackground Tag="section" fluid={bgimage.childImageSharp.fluid}>
       <TextBox>
-        <div className="header-logo">h<span className="header-logo-letter-y">y</span>perlog<span className="header-logo-club">.Club</span></div>
+        <div className="hero-logo">h<span className="hero-logo-letter-y">y</span>perlog<span className="hero-logo-club">.Club</span></div>
         <div className="hero-text"><p>We&apos;re an open community of newbie programmers who learn to code together.</p></div>
         <div className="hero-buttons">
           <Button className="join-button" href="https://discord.gg/XkWxzxm"><FaDiscord /> Join Discord</Button>

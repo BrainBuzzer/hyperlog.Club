@@ -2,7 +2,7 @@
   "name": "hyperlog.club",
   "private": true,
   "description": "Client-side app for hyperlog.club",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Aditya Giri <dtrg21@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.17",
@@ -22,6 +22,7 @@
     "gatsby-plugin-sharp": "^2.2.27",
     "gatsby-plugin-sitemap": "^2.2.17",
     "gatsby-plugin-typography": "^2.3.7",
+    "gatsby-plugin-use-dark-mode": "^1.1.2",
     "gatsby-remark-copy-linked-files": "^2.1.24",
     "gatsby-remark-images": "^3.1.25",
     "gatsby-remark-prismjs": "^3.3.13",
@@ -35,9 +36,11 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-lottie": "^1.2.3",
+    "react-toggle": "^4.1.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@testing-library/cypress": "^5.0.1",

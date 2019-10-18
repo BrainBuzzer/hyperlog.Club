@@ -1,6 +1,6 @@
 ---
 title: Functions
-slug: js/functions
+slug: javascript/functions
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---

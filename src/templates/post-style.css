@@ -6,6 +6,10 @@
   font-size: 16px;
 }
 
+.dark-mode .markdown-section h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
 .markdown-section .result {
   line-height: 1.6;
   box-sizing: inherit;
@@ -16,6 +20,10 @@
   color: #000;
   margin: 30px 0;
   padding: 20px;
+}
+
+.dark-mode .markdown-section .result {
+  color: #fff;
 }
 
 .markdown-section .result:before {
@@ -44,6 +52,10 @@
   padding: 25px 30px;
 }
 
+.dark-mode .markdown-section .info {
+  color: rgba(255,255,255,0.7)
+}
+
 .markdown-section .info-imp {
   text-size-adjust: none;
   color: #333;
@@ -54,6 +66,10 @@
   border-radius: 6px;
 }
 
+.dark-mode .markdown-section .info-imp {
+  color: #fff;
+}
+
 .markdown-section .warn-imp {
   text-size-adjust: none;
   color: #333;
@@ -62,6 +78,10 @@
   padding: 24px;
   border: 3px solid #FFB200;
   border-radius: 6px;
+}
+
+.dark-mode .markdown-section .warn-imp {
+  color: #fff;
 }
 
 .markdown-section .info-imp .header-imp {

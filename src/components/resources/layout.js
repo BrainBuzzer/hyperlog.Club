@@ -5,15 +5,17 @@ import SEO from '../seo'
 import Header from '../shared/header'
 import css from '@emotion/css'
 import PropTypes from 'prop-types';
+import { FiEdit } from 'react-icons/fi'
+import NextPrev from './next-prev'
 
-const Layout = ({ children, link, title, resource }) => {
+const Layout = ({ children, frontmatter }) => {
   return (
     <>
-      <SEO title={title} />
+      <SEO title={frontmatter.title} />
       <Header />
       <Row>
         <Col sm={24} md={6}>
-          <Sidebar link={link} resource={resource} />
+          <Sidebar link={`/resources/${frontmatter.slug}/`} resource={frontmatter.resource} />
         </Col>
         <Col sm={24} md={18}>
           <main>
@@ -24,14 +26,22 @@ const Layout = ({ children, link, title, resource }) => {
               overflow: hidden;
               background: #fff;
 
+              .dark-mode & {
+                background: #011C35;
+              }
+
               @media (max-width: 767px) {
                 padding: 0 20px 144px 20px;
               }
             `}>
               <article className="markdown-section" id="main">
-                <h1>{title}</h1>
+                <h1>{frontmatter.title}</h1>
                 <Divider />
                 <div dangerouslySetInnerHTML={{ __html: children}} />
+                <Divider />
+                <a href={`https://github.com/BrainBuzzer/hyperlog.Club/edit/master/resources/${frontmatter.slug}.md`} css={css`color: #999; &:hover { color: #222; }`}><FiEdit /> Edit this page</a>
+                <Divider />
+                <NextPrev link={`/resources/${frontmatter.slug}/`} resource={frontmatter.resource} />
               </article>
             </section>
           </main>
@@ -43,10 +53,8 @@ const Layout = ({ children, link, title, resource }) => {
 }
 
 Layout.propTypes =  {
-  children: PropTypes.element.isRequired,
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  resource: PropTypes.object.isRequired
+  children: PropTypes.string.isRequired,
+  frontmatter: PropTypes.object.isRequired
 }
 
 export default Layout

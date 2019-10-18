@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import { Menu } from 'antd';
 import { Link } from 'gatsby';
 import { css } from "@emotion/core"
+import ThemeContext from '../../context/ThemeContext'
 
 class Sidebar extends React.Component {
   constructor() {
@@ -38,37 +39,42 @@ class Sidebar extends React.Component {
         <section css={css`
           overflow-x: hidden;
           overflow-y: hidden;
-          max-height: 100vh;
         `}>
-          <Menu
-            css={css`
-              width: 256;
-              overflow-y: hidden;
-              overflow-x: hidden;
-              padding-top: 1.5rem;
-              font-family: Inter, sans-serif;
-            `}
-            mode="inline"
-            selectedKeys={[link]}
-          >
-            {this.state.Resources.map((resource, index) => (
-              <Menu.ItemGroup key={index} title={resource.title}>
-                {resource.items.map((item) => (
-                  <Menu.Item key={item.link}>
-                    <Link to={item.link}>{item.title}</Link>
-                  </Menu.Item>
+          <ThemeContext.Consumer>
+            {theme => (
+              <Menu
+                css={css`
+                  width: 256;
+                  overflow-y: hidden;
+                  overflow-x: hidden;
+                  padding-top: 1.5rem;
+                  font-family: Inter, sans-serif;
+                `}
+                mode="inline"
+                theme={theme.dark ? "dark" : "light"}
+                selectedKeys={[link]}
+              >
+                {this.state.Resources.map((resource, index) => (
+                  <Menu.ItemGroup key={index} title={resource.title}>
+                    {resource.items.map((item) => (
+                      <Menu.Item key={item.link}>
+                        <Link to={item.link}>{item.title}</Link>
+                      </Menu.Item>
+                    ))}
+                  </Menu.ItemGroup>
                 ))}
-              </Menu.ItemGroup>
-            ))}
-          </Menu>
+              </Menu>
+            )}
+          </ThemeContext.Consumer>
         </section>
     );
   }
 }
 
 Sidebar.propTypes = {
-  resource: PropTypes.object,
-  link: PropTypes.string
+  resource: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  darkMode: PropTypes.bool.isRequired
 }
 
 export default Sidebar

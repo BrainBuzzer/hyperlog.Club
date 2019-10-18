@@ -125,6 +125,15 @@ module.exports = {
         cookieDomain: `hyperlog.club`,
       },
     },
+    {
+      resolve: `gatsby-plugin-use-dark-mode`,
+      options: {
+         classNameDark: `dark-mode`,
+         classNameLight: `light-mode`,
+         storageKey: `darkMode`,
+         minify: true,
+      },
+    },
     `gatsby-plugin-sitemap`,
   ],
 }

@@ -8,7 +8,7 @@ const PostResource = ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <Layout className="content" link={`/resources/${post.frontmatter.slug}/`} resource={post.frontmatter.resource} title={post.frontmatter.title}>
+      <Layout className="content" frontmatter={post.frontmatter}>
         {post.html}
       </Layout>
     </>

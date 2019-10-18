@@ -1,6 +1,6 @@
 ---
 title: Hello, World!
-slug: js/hello-world
+slug: javascript/hello-world
 author: Ilya Kantor, javascript.info
 resource: javascript
 ---
