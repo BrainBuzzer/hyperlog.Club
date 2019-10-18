@@ -26,6 +26,10 @@ const Layout = ({ children, frontmatter }) => {
               overflow: hidden;
               background: #fff;
 
+              .dark-mode & {
+                background: #011C35;
+              }
+
               @media (max-width: 767px) {
                 padding: 0 20px 144px 20px;
               }
