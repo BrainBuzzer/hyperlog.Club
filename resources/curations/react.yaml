@@ -1,0 +1,17 @@
+- name: ReactJS
+  description: React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+  topics:
+    - name: React Basics
+      lessons:
+        - name: Official ReactJS Tutorial
+          link: https://reactjs.org/tutorial/tutorial.html?ref=hyperlog.club
+          description: This is official ReactJS tutorial which should work as a good guide to get you up and running with certain aspects of ReactJS.
+        - name: React Tutorial by Tania Rascia
+          link: https://www.taniarascia.com/getting-started-with-react/?ref=hyperlog.club
+          description: This tutorial by Tania Rascia gets you from zero to introducing all the concepts in the React ecosystem.
+    - name: Intermediate React
+    - name: Advanced React
+  resources:
+    - name: Awesome React
+      link: https://github.com/enaqx/awesome-react?ref=hyperlog.club
+      description: A collection of awesome things regarding React Ecosystem.
