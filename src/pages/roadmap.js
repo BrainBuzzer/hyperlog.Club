@@ -12,21 +12,21 @@ class Roadmap extends React.Component {
     return(
       <Layout>
         <SEO title="React Roadmap" />
+        <h1>{ReactRoadmap.name}</h1>
+        <p></p>
         <Collapse accordion>
-          {ReactRoadmap.map((main) => {
-            return main.topics.map((topic, i) => (
-              <Panel header={topic.name} key={i}>
-                <Timeline>
-                  {topic.lessons.map((lesson, ii) => (
-                    <Item key={ii} color={lesson.difficulty}>
-                      <b><a href={lesson.link}>{lesson.name}</a></b>
-                      <p>{lesson.description}</p>
-                    </Item>
-                  ))}
-                </Timeline>
-              </Panel>
-            ))
-          })}
+          {ReactRoadmap.topics.map((topic, i) => (
+            <Panel header={topic.name} key={i}>
+              <Timeline>
+                {topic.lessons.map((lesson, ii) => (
+                  <Item key={ii} color={lesson.difficulty}>
+                    <b><a href={lesson.link}>{lesson.name}</a></b>
+                    <p>{lesson.description}</p>
+                  </Item>
+                ))}
+              </Timeline>
+            </Panel>
+          ))}
           
         </Collapse>
       </Layout>
