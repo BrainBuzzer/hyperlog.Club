@@ -9,6 +9,7 @@
   <a href="https://app.netlify.com/sites/laughing-tesla-7919a4/deploys">
     <img src="https://api.netlify.com/api/v1/badges/390ae289-3163-4ef3-b2c4-846152e63b72/deploy-status" alt="Netlify Status" />
   </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FBrainBuzzer%2Fhyperlog.Club?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FBrainBuzzer%2Fhyperlog.Club.svg?type=shield"/></a>
 </div>
 
 A community for newcoming programmers to learn new programming languages and leverage the power of resources.
@@ -94,3 +95,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBrainBuzzer%2Fhyperlog.Club.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBrainBuzzer%2Fhyperlog.Club?ref=badge_large)
