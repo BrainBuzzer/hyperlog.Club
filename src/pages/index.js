@@ -67,7 +67,7 @@ const IndexPage = () => (
         </Question>
         <Question>
           <h2>5. I want to contribute. How can I do it?</h2>
-          <p>All of the code of hyperlog.Club is available for completely free of cost on <Link to="https://github.com/BrainBuzzer/hyperlog.Club/">Github</Link>. If you want to add any resources, or want to create any new tutorials, just follow the guideline on the Github Repository. We are actively looking for new contributors, so please feel free.</p>
+          <p>All of the code of hyperlog.Club is available for completely free of cost on <Link to="https://github.com/BrainBuzzer/hyperlog.Club/">GitHub</Link>. If you want to add any resources, or want to create any new tutorials, just follow the guideline on the GitHub Repository. We are actively looking for new contributors, so please feel free.</p>
         </Question>
       </QNA>
     </div>
