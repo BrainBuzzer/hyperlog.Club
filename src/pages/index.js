@@ -55,7 +55,7 @@ const IndexPage = () => (
         </Question>
         <Question>
           <h2>2. How can I join the community?</h2>
-          <p>You can join the community by <Link to="/login">clicking here</Link>. We have a Discord server for which, an invite link will be sent to your email. You will only need a GitHub account to join the community.</p>
+          <p>You can join the community by <a href="/login">clicking here</a>. We have a Discord server for which, an invite link will be sent to your email. You will only need a GitHub account to join the community.</p>
         </Question>
         <Question>
           <h2>3. What do I get after joining the community?</h2>
@@ -67,7 +67,7 @@ const IndexPage = () => (
         </Question>
         <Question>
           <h2>5. I want to contribute. How can I do it?</h2>
-          <p>All of the code of hyperlog.Club is available for completely free of cost on <Link to="https://github.com/BrainBuzzer/hyperlog.Club/">GitHub</Link>. If you want to add any resources, or want to create any new tutorials, just follow the guideline on the GitHub Repository. We are actively looking for new contributors, so please feel free.</p>
+          <p>All of the code of hyperlog.Club is available for completely free of cost on <a href="https://github.com/BrainBuzzer/hyperlog.Club/">GitHub</a>. If you want to add any resources, or want to create any new tutorials, just follow the guideline on the GitHub Repository. We are actively looking for new contributors, so please feel free.</p>
         </Question>
       </QNA>
     </div>
