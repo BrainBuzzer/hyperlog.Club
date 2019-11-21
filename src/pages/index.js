@@ -55,7 +55,7 @@ const IndexPage = () => (
         </Question>
         <Question>
           <h2>2. How can I join the community?</h2>
-          <p>You can join the community by <a href="/login">clicking here</a>. We have a Discord server for which, an invite link will be sent to your email. You will only need a GitHub account to join the community.</p>
+          <p>You can join the community by <a href="https://discord.gg/XkWxzxm">clicking here</a>. We have a Discord server for which, an invite link will be sent to your email. You will only need a GitHub account to join the community.</p>
         </Question>
         <Question>
           <h2>3. What do I get after joining the community?</h2>
